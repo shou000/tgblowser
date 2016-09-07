@@ -26,12 +26,19 @@ public class MainActivity extends Activity {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
 //                if(url.equals("http://togetter.com/li/"+"*" )){
-                if(url.indexOf("li")!=-1 && url.indexOf("i.togetter")==-1){
+
+                Log.d("TAG","Originalurl "+ url);
+                if(url.startsWith("http://togetter.com/li") ){
                     url = "http://i." + url.substring(7,url.length());
-                    Log.d("TAG",url);
+                    Log.d("TAG","changeurl "+ url);
+                    myWebView.loadUrl(url);
+                }else if(url.startsWith("myapp:link:")){
+                    url = url.substring(11,url.length());
+                    url = url.replaceFirst("%3A",":");
+                    Log.d("TAG","intent " + url);
                     myWebView.loadUrl(url);
                 }
-                Log.d("TAG",url);
+
                 return false;
             }
 
