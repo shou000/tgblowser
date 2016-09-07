@@ -5,21 +5,29 @@ import android.graphics.Bitmap;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.util.Log;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
     private WebView myWebView;
-    private char i;
+    private String pageTitle;
+    private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        textView = (TextView)findViewById(R.id.textView);
 
         myWebView = (WebView)findViewById(R.id.webView);
         myWebView.setWebViewClient(new WebViewClient(){
@@ -39,14 +47,18 @@ public class MainActivity extends Activity {
                     myWebView.loadUrl(url);
                 }
 
+
+
                 return false;
             }
+
+
 
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
                 ProgressBar progressBar = (ProgressBar)findViewById(R.id.progressBar);
                 progressBar.setVisibility(View.VISIBLE);
-                progressBar.setProgress(40);
+//                progressBar.setProgress(40);
             }
 
             @Override
@@ -56,12 +68,44 @@ public class MainActivity extends Activity {
                 progressBar.setVisibility(View.GONE);
             }
         });
+        myWebView.setWebChromeClient(new WebChromeClient(){
+            @Override
+            public void onProgressChanged(WebView view, int progress) {
+                ProgressBar progressBar = (ProgressBar)findViewById(R.id.progressBar);
+                progressBar.setProgress(progress*1000);
+            }
+
+            @Override
+            public void onReceivedTitle(WebView view, String title) {
+                pageTitle = myWebView.getTitle();
+                textView.setText(pageTitle);
+                Log.d("TAG","pagetitle "+ pageTitle);
+            }
+        });
 
         myWebView.getSettings().setUserAgentString("Mozilla/5.0 (iPhone; CPU iPhone OS 8_0_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12A366 Safari/600.1.4");
         myWebView.getSettings().setJavaScriptEnabled(true);
 
         myWebView.loadUrl("http://togetter.com/hot");
+    }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onMenuItemSelected(int featureId, MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.setting:
+
+                break;
+            case R.id.reload:
+                myWebView.reload();
+                break;
+        }
+        return super.onMenuItemSelected(featureId, item);
     }
 
     @Override
