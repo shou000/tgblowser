@@ -1,7 +1,11 @@
 package com.example.owner.tgblowser;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
+import android.net.Uri;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -15,6 +19,7 @@ import android.webkit.WebViewClient;
 import android.util.Log;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -28,7 +33,6 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         textView = (TextView)findViewById(R.id.textView);
-
         myWebView = (WebView)findViewById(R.id.webView);
         myWebView.setWebViewClient(new WebViewClient(){
             @Override
@@ -46,13 +50,8 @@ public class MainActivity extends Activity {
                     Log.d("TAG","intent " + url);
                     myWebView.loadUrl(url);
                 }
-
-
-
                 return false;
             }
-
-
 
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
@@ -86,7 +85,20 @@ public class MainActivity extends Activity {
         myWebView.getSettings().setUserAgentString("Mozilla/5.0 (iPhone; CPU iPhone OS 8_0_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12A366 Safari/600.1.4");
         myWebView.getSettings().setJavaScriptEnabled(true);
 
-        myWebView.loadUrl("http://togetter.com/hot");
+        Intent intent = getIntent();
+        String action = intent.getAction();
+        if (Intent.ACTION_VIEW.equals(action)){
+            Uri uri = intent.getData();
+            String url = uri.toString();
+            Toast.makeText(this, url, Toast.LENGTH_LONG).show();
+            if(url.startsWith("http://togetter.com/li") ){
+                url = "http://i." + url.substring(7,url.length());
+                Log.d("TAG","changeurl "+ url);
+                myWebView.loadUrl(url);
+            }
+        }else {
+            myWebView.loadUrl("http://togetter.com/hot");
+        }
     }
 
     @Override
@@ -99,10 +111,16 @@ public class MainActivity extends Activity {
     public boolean onMenuItemSelected(int featureId, MenuItem item) {
         switch (item.getItemId()){
             case R.id.setting:
-
+                Intent intent = new android.content.Intent(this, preference.class);
+                startActivity(intent);
                 break;
             case R.id.reload:
                 myWebView.reload();
+                break;
+            case R.id.key1:
+                SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(this);
+                Boolean bool = pref.getBoolean("checkbox_1_key",true);
+                Toast.makeText(this, bool.toString(), Toast.LENGTH_SHORT).show();
                 break;
         }
         return super.onMenuItemSelected(featureId, item);
