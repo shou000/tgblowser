@@ -81,16 +81,21 @@ public class DetailActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String action = intent.getAction();
+        Uri uri = intent.getData();
+        String url = uri.toString();
         if (Intent.ACTION_VIEW.equals(action)){
-            Uri uri = intent.getData();
-            String url = uri.toString();
+
             Toast.makeText(this, url, Toast.LENGTH_LONG).show();
             if(url.startsWith("http://togetter.com/li") ){
                 url = "http://i." + url.substring(7,url.length());
                 Log.d("TAG","changeurl "+ url);
                 myWebView.loadUrl(url);
             }
-        }else {
+        }else if(url.startsWith("http://togetter.com/li") ){
+            url = "http://i." + url.substring(7,url.length());
+            Log.d("TAG","changeurl "+ url);
+            myWebView.loadUrl(url);
+        }else{
             myWebView.loadUrl("http://togetter.com/hot");
         }
 

@@ -1,0 +1,1814 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://togetter.com/hot -->
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml"><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./注目のまとめ - Togetterまとめ_files/0787508c5c"></script><script src="./注目のまとめ - Togetterまとめ_files/nr-963.min.js.ダウンロード"></script><script src="./注目のまとめ - Togetterまとめ_files/sdk.js.ダウンロード"></script><script src="./注目のまとめ - Togetterまとめ_files/twemoji.min.js.ダウンロード"></script><script src="./注目のまとめ - Togetterまとめ_files/bookmark_button.js.ダウンロード"></script>
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width,user-scalable=no">
+<meta name="apple-itunes-app" content="app-id=387151129">
+<script id="facebook-jssdk" src="./注目のまとめ - Togetterまとめ_files/xfbml.ad.js.ダウンロード"></script><script src="./注目のまとめ - Togetterまとめ_files/ca-pub-1379083136098030.js.ダウンロード"></script><script async="" src="./注目のまとめ - Togetterまとめ_files/analytics.js.ダウンロード"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-963.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+
+<meta name="google-site-verification" content="SI0ODkRbg4-YeTmDnwJlfSgCM4Alg1rxkfafZzqzvhI">
+<meta name="robots" content="index,follow">
+<meta name="googlebot" content="index,follow,noarchive">
+<meta name="keywords" content="twitter tweet まとめ つぶやき mushup">
+<meta name="description" content="いまネット上で話題になっている注目のまとめをお知らせします。">
+<meta property="og:title" content="注目のまとめ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://togetter.com/hot">
+<meta property="og:site_name" content="Togetter">
+<meta property="og:description" content="いまネット上で話題になっている注目のまとめをお知らせします。">
+<meta property="og:image" content="http://s.togetter.com/static/1.13.59/web/img/icon/tg_ogp_default4.png">
+<meta property="fb:app_id" content="121386947952778">
+<meta property="fb:page_id" content="124826100908415">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@togetter_jp">
+<meta name="twitter:url" content="http://togetter.com/hot">
+<meta name="twitter:title" content="注目のまとめ">
+<meta name="twitter:description" content="いまネット上で話題になっている注目のまとめをお知らせします。">
+<meta name="twitter:image" content="http://s.togetter.com/static/1.13.59/web/img/icon/tg_ogp_default4.png">
+<meta name="twitter:creator" content="@togetter_jp">
+<meta name="acc_time" content="05/Oct/2016:22:38:31 +0900">
+<meta name="csrf_token" content="34d58620fc0c6715edb4c525fe9258c2d12584ad">
+<link rel="alternate" media="handheld" href="http://m.togetter.com/hot">
+<link rel="apple-touch-icon-precomposed" href="http://s.togetter.com/static/1.13.59/web/img/icon/tg_icon_60.png">
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://s.togetter.com/static/1.13.59/web/img/icon/tg_icon_76.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://s.togetter.com/static/1.13.59/web/img/icon/tg_icon_120.png">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://s.togetter.com/static/1.13.59/web/img/icon/tg_icon_152.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="http://s.togetter.com/static/1.13.59/web/img/icon/tg_icon_180.png">
+<link rel="shortcut icon" title="Togetter" href="http://s.togetter.com/static/1.13.59/web/img/icon/favicon.ico">
+<link rel="icon" type="image/x-icon" href="http://s.togetter.com/static/1.13.59/web/img/icon/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" title="Togetter" href="http://s.togetter.com/static/1.13.59/web/img/icon/tg_icon_16.png">
+<link rel="icon" type="image/png" sizes="192x192" title="Togetter" href="http://s.togetter.com/static/1.13.59/web/img/icon/tg_icon_192.png">
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://togetter.com/rss/hot">
+<link rel="canonical" href="http://togetter.com/hot">
+<link rel="next" href="http://togetter.com/hot?page=2">
+<title>注目のまとめ - Togetterまとめ</title>
+<link href="./注目のまとめ - Togetterまとめ_files/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" charset="UTF-8">
+<!--
+//LAB.js
+(function(g){var h=g.$LAB,_UseLocalXHR="UseLocalXHR",_AlwaysPreserveOrder="AlwaysPreserveOrder",_AllowDuplicates="AllowDuplicates",_CacheBust="CacheBust",_Debug="Debug",_BasePath="BasePath",root_page=/^[^?#]*\//.exec(location.href)[0],root_domain=/^\w+\:\/\/\/?[^\/]+/.exec(root_page)[0],append_to=document.head||document.getElementsByTagName("head"),opera_or_gecko=(g.opera&&Object.prototype.toString.call(g.opera)=="[object Opera]")||("MozAppearance"in document.documentElement.style),log_msg=function(){},log_error=log_msg,test_script_elem=document.createElement("script"),explicit_preloading=typeof test_script_elem.preload=="boolean",real_preloading=explicit_preloading||(test_script_elem.readyState&&test_script_elem.readyState=="uninitialized"),script_ordered_async=!real_preloading&&test_script_elem.async===true,xhr_or_cache_preloading=!real_preloading&&!script_ordered_async&&!opera_or_gecko;if(g.console&&g.console.log){if(!g.console.error)g.console.error=g.console.log;log_msg=function(a){g.console.log(a)};log_error=function(a,b){g.console.error(a,b)}}function is_func(a){return Object.prototype.toString.call(a)=="[object Function]"}function is_array(a){return Object.prototype.toString.call(a)=="[object Array]"}function canonical_uri(a,b){var c=/^\w+\:\/\//;if(/^\/\/\/?/.test(a)){a=location.protocol+a}else if(!c.test(a)&&a.charAt(0)!="/"){a=(b||"")+a}return c.test(a)?a:((a.charAt(0)=="/"?root_domain:root_page)+a)}function merge_objs(a,b){for(var k in a){if(a.hasOwnProperty(k)){b[k]=a[k]}}return b}function check_chain_group_scripts_ready(a){var b=false;for(var i=0;i<a.scripts.length;i++){if(a.scripts[i].ready&&a.scripts[i].exec_trigger){b=true;a.scripts[i].exec_trigger();a.scripts[i].exec_trigger=null}}return b}function create_script_load_listener(a,b,c,d){a.onload=a.onreadystatechange=function(){if((a.readyState&&a.readyState!="complete"&&a.readyState!="loaded")||b[c])return;a.onload=a.onreadystatechange=null;d()}}function script_executed(a){a.ready=a.finished=true;for(var i=0;i<a.finished_listeners.length;i++){a.finished_listeners[i]()}a.ready_listeners=[];a.finished_listeners=[]}function request_script(b,c,d,e,f){setTimeout(function(){var a,src=c.real_src,xhr;if("item"in append_to){if(!append_to[0]){setTimeout(arguments.callee,25);return}append_to=append_to[0]}a=document.createElement("script");if(c.type)a.type=c.type;if(c.charset)a.charset=c.charset;if(f){if(real_preloading){if(b[_Debug])log_msg("start script preload: "+src);d.elem=a;if(explicit_preloading){a.preload=true;a.onpreload=e}else{a.onreadystatechange=function(){if(a.readyState=="loaded")e()}}a.src=src}else if(f&&src.indexOf(root_domain)==0&&b[_UseLocalXHR]){xhr=new XMLHttpRequest();if(b[_Debug])log_msg("start script preload (xhr): "+src);xhr.onreadystatechange=function(){if(xhr.readyState==4){xhr.onreadystatechange=function(){};d.text=xhr.responseText+"\n//@ sourceURL="+src;e()}};xhr.open("GET",src);xhr.send()}else{if(b[_Debug])log_msg("start script preload (cache): "+src);a.type="text/cache-script";create_script_load_listener(a,d,"ready",function(){append_to.removeChild(a);e()});a.src=src;append_to.insertBefore(a,append_to.firstChild)}}else if(script_ordered_async){if(b[_Debug])log_msg("start script load (ordered async): "+src);a.async=false;create_script_load_listener(a,d,"finished",e);a.src=src;append_to.insertBefore(a,append_to.firstChild)}else{if(b[_Debug])log_msg("start script load: "+src);create_script_load_listener(a,d,"finished",e);a.src=src;append_to.insertBefore(a,append_to.firstChild)}},0)}function create_sandbox(){var f={},can_use_preloading=real_preloading||xhr_or_cache_preloading,queue=[],registry={},instanceAPI,callback_funcs=[];f[_UseLocalXHR]=true;f[_AlwaysPreserveOrder]=false;f[_AllowDuplicates]=false;f[_CacheBust]=false;f[_Debug]=false;f[_BasePath]="";function execute_preloaded_script(a,b,c){var d;function preload_execute_finished(){if(d!=null){d=null;script_executed(c)}}if(registry[b.src].finished)return;if(!a[_AllowDuplicates])registry[b.src].finished=true;d=c.elem||document.createElement("script");if(b.type)d.type=b.type;if(b.charset)d.charset=b.charset;create_script_load_listener(d,c,"finished",preload_execute_finished);if(c.elem){c.elem=null}else if(c.text){d.onload=d.onreadystatechange=null;d.text=c.text}else{d.src=b.real_src}append_to.insertBefore(d,append_to.firstChild);if(c.text){preload_execute_finished()}}function do_script(a,b,c,d){var e,registry_items,ready_cb=function(){b.ready_cb(b,function(){execute_preloaded_script(a,b,e)})},finished_cb=function(){b.finished_cb(b,c)};b.src=canonical_uri(b.src,a[_BasePath]);b.real_src=b.src+(a[_CacheBust]?((/\?.*$/.test(b.src)?"&_":"?_")+~~(Math.random()*1E9)+"="):"");if(!registry[b.src])registry[b.src]={items:[],finished:false};registry_items=registry[b.src].items;if(a[_AllowDuplicates]||registry_items.length==0){e=registry_items[registry_items.length]={ready:false,finished:false,ready_listeners:[ready_cb],finished_listeners:[finished_cb]};request_script(a,b,e,((d)?function(){e.ready=true;for(var i=0;i<e.ready_listeners.length;i++){e.ready_listeners[i]()}e.ready_listeners=[]}:function(){script_executed(e)}),d)}else{e=registry_items[0];if(e.finished){finished_cb()}else{e.finished_listeners.push(finished_cb)}}}function create_chain(){var d,chain_opts=merge_objs(f,{}),chain=[],exec_cursor=0,scripts_currently_loading=false,group;function chain_script_ready(a,b){if(chain_opts[_Debug])log_msg("script preload finished: "+a.real_src);a.ready=true;a.exec_trigger=b;advance_exec_cursor()}function chain_script_executed(a,b){if(chain_opts[_Debug])log_msg("script execution finished: "+a.real_src);a.ready=a.finished=true;a.exec_trigger=null;for(var i=0;i<b.scripts.length;i++){if(!b.scripts[i].finished)return}b.finished=true;advance_exec_cursor()}function advance_exec_cursor(){while(exec_cursor<chain.length){if(is_func(chain[exec_cursor])){if(chain_opts[_Debug])log_msg("$LAB.wait() executing: "+chain[exec_cursor]);try{chain[exec_cursor++]()}catch(err){if(chain_opts[_Debug])log_error("$LAB.wait() error caught: ",err)}continue}else if(!chain[exec_cursor].finished){if(check_chain_group_scripts_ready(chain[exec_cursor]))continue;break}exec_cursor++}if(exec_cursor==chain.length){scripts_currently_loading=false;group=false;if(callback_funcs.length){for(var i=0;i<callback_funcs.length;i++){if(is_func(callback_funcs[i]))callback_funcs[i]()}}}}function init_script_chain_group(){if(!group||!group.scripts){chain.push(group={scripts:[],finished:true})}}d={script:function(){for(var i=0;i<arguments.length;i++){(function(a,b){var c;if(!is_array(a)){b=[a]}for(var j=0;j<b.length;j++){init_script_chain_group();a=b[j];if(is_func(a))a=a();if(!a)continue;if(is_array(a)){c=[].slice.call(a);c.unshift(j,1);[].splice.apply(b,c);j--;continue}if(typeof a=="string")a={src:a};a=merge_objs(a,{ready:false,ready_cb:chain_script_ready,finished:false,finished_cb:chain_script_executed});group.finished=false;group.scripts.push(a);do_script(chain_opts,a,group,(can_use_preloading&&scripts_currently_loading));scripts_currently_loading=true;if(chain_opts[_AlwaysPreserveOrder])d.wait()}})(arguments[i],arguments[i])}return d},wait:function(){if(arguments.length>0){for(var i=0;i<arguments.length;i++){chain.push(arguments[i])}group=chain[chain.length-1]}else group=false;advance_exec_cursor();return d}};return{script:d.script,wait:d.wait,setOptions:function(a){merge_objs(a,chain_opts);return d}}}instanceAPI={setGlobalDefaults:function(a){merge_objs(a,f);return instanceAPI},setOptions:function(){return create_chain().setOptions.apply(null,arguments)},script:function(){return create_chain().script.apply(null,arguments)},wait:function(){return create_chain().wait.apply(null,arguments)},queueScript:function(){queue[queue.length]={type:"script",args:[].slice.call(arguments)};return instanceAPI},queueWait:function(){queue[queue.length]={type:"wait",args:[].slice.call(arguments)};return instanceAPI},runQueue:function(){var a=instanceAPI,len=queue.length,i=len,val;for(;--i>=0;){val=queue.shift();a=a[val.type].apply(null,val.args)}return a},noConflict:function(){g.$LAB=h;return instanceAPI},sandbox:function(){return create_sandbox()},ready:function(a){if(is_func(a)){callback_funcs.push(a)}}};return instanceAPI}g.$LAB=create_sandbox();(function(a,b,c){if(document.readyState==null&&document[a]){document.readyState="loading";document[a](b,c=function(){document.removeEventListener(b,c,false);document.readyState="complete"},false)}})("addEventListener","DOMContentLoaded")})(this);
+
+var environment = "production";
+var domain = "togetter.com";
+var baseuri = "";
+var canonical = "/hot";
+var controller = "ipage";
+var action = "hot";
+var index = "";
+var userid = "501892150";
+var switchto = false;
+var admin = false;
+var loading = "//s.togetter.com/static/1.13.59/web/img/loadingAnimation.gif";
+if(location.hostname != domain){
+	location.href = "http://"+domain+baseuri+canonical;
+}
+-->
+</script>
+<script src="./注目のまとめ - Togetterまとめ_files/jquery.min.js.ダウンロード" type="text/javascript"></script>
+<script src="./注目のまとめ - Togetterまとめ_files/jquery.transit.min.js.ダウンロード" type="text/javascript"></script>
+<script src="./注目のまとめ - Togetterまとめ_files/widgets.js.ダウンロード" type="text/javascript"></script>
+<script type="text/javascript" src="./注目のまとめ - Togetterまとめ_files/iapplication.js.gzip"></script>
+<link rel="stylesheet" type="text/css" href="./注目のまとめ - Togetterまとめ_files/itogetter.css.gzip">
+<style type="text/css">
+<!--
+.cssblk,.cssline{background: url(//s.togetter.com/static/1.13.59/web/img/ipn_images_2x.png) no-repeat;background-size:120px 90px;}
+.pswp__button, .pswp__button--arrow--left:before, .pswp__button--arrow--right:before{background-image: url(//s.togetter.com/static/1.13.59/web/img/default-skin.png);}
+.pswp__button--arrow--left, .pswp__button--arrow--right{background:none;}
+-->
+</style>
+<script type="text/javascript">
+<!--
+var is336 = (document.documentElement.clientWidth || window.innerWidth) > 342;
+var dfpads = {"tg_ipn_list_top":"<script type=\"text\/javascript\"><!--\ngoogle_ad_client = \"ca-pub-7378382505262839\";\n\/* tg_ipn_list_top *\/\ngoogle_ad_slot = \"6268902096\";\ngoogle_ad_width = 300;\ngoogle_ad_height = 250;\n\/\/-->\n<\/script>\n<script type=\"text\/javascript\"\nsrc=\"\/\/pagead2.googlesyndication.com\/pagead\/show_ads.js\">\n<\/script>","tg_ipn_list_top_336":"<script type=\"text\/javascript\"><!--\ngoogle_ad_client = \"ca-pub-7378382505262839\";\n\/* tg_ipn_list_top_336 *\/\ngoogle_ad_slot = \"7745609976\";\ngoogle_ad_width = 336;\ngoogle_ad_height = 280;\n\/\/-->\n<\/script>\n<script type=\"text\/javascript\"\nsrc=\"\/\/pagead2.googlesyndication.com\/pagead\/show_ads.js\">\n<\/script>","tg_ipn_list_bottom":"<script type=\"text\/javascript\"><!--\ngoogle_ad_client = \"ca-pub-7378382505262839\";\n\/* tg_ipn_list_bottom *\/\ngoogle_ad_slot = \"1559273016\";\ngoogle_ad_width = 300;\ngoogle_ad_height = 250;\n\/\/-->\n<\/script>\n<script type=\"text\/javascript\"\nsrc=\"\/\/pagead2.googlesyndication.com\/pagead\/show_ads.js\">\n<\/script>","tg_ipn_list_bottom_336":"<script type=\"text\/javascript\"><!--\ngoogle_ad_client = \"ca-pub-7378382505262839\";\n\/* tg_ipn_list_bottom_336 *\/\ngoogle_ad_slot = \"3035980896\";\ngoogle_ad_width = 336;\ngoogle_ad_height = 280;\n\/\/-->\n<\/script>\n<script type=\"text\/javascript\"\nsrc=\"\/\/pagead2.googlesyndication.com\/pagead\/show_ads.js\">\n<\/script>","tg_ipn_list_bottom_336_dfp":"<!-- \/5453651\/tg_ipn_list_bottom_336_dfp -->\n<div id='div-gpt-ad-1471877962527-0' style='height:280px; width:336px;'>\n<script>\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-1471877962527-0'); });\n<\/script>\n<\/div>","tg_ipn_list_bottom_336_back":"<!-- \/5453651\/tg_ipn_list_bottom -->\n<div id='div-gpt-ad-1474725638955-0' style='height:280px; width:336px;'>\n<script>\ngoogletag.cmd.push(function() { googletag.display('div-gpt-ad-1474725638955-0'); });\n<\/script>\n<\/div>","tg_ipn_middle":"<script async src=\"\/\/pagead2.googlesyndication.com\/pagead\/js\/adsbygoogle.js\"><\/script>\n<!-- tg_ipn_middle -->\n<ins class=\"adsbygoogle\"\n     style=\"display:inline-block;width:300px;height:250px\"\n     data-ad-client=\"ca-pub-1379083136098030\"\n     data-ad-slot=\"0292527581\"><\/ins>\n<script>\n(adsbygoogle = window.adsbygoogle || []).push({});\n<\/script>","tg_ipn_middle_336":"<script async src=\"\/\/pagead2.googlesyndication.com\/pagead\/js\/adsbygoogle.js\"><\/script>\n<!-- tg_ipn_middle_336 -->\n<ins class=\"adsbygoogle\"\n     style=\"display:inline-block;width:336px;height:280px\"\n     data-ad-client=\"ca-pub-1379083136098030\"\n     data-ad-slot=\"9258737502\"><\/ins>\n<script>\n(adsbygoogle = window.adsbygoogle || []).push({});\n<\/script>","tg_ipn_middle_ng":"<!-- i-mobile for SmartPhone client script -->\n<script type=\"text\/javascript\">\n\timobile_tag_ver = \"0.3\";\n\timobile_pid = \"15055\";\n\timobile_asid = \"528702\";\n\timobile_type = \"inline\";\n<\/script>\n<script type=\"text\/javascript\" src=\"http:\/\/spad.i-mobile.co.jp\/script\/adssp.js?20110215\"><\/script>","tg_ipn_bottom":"<script async src=\"\/\/pagead2.googlesyndication.com\/pagead\/js\/adsbygoogle.js\"><\/script>\n<!-- tg_ipn_bottom -->\n<ins class=\"adsbygoogle\"\n     style=\"display:inline-block;width:300px;height:250px\"\n     data-ad-client=\"ca-pub-1379083136098030\"\n     data-ad-slot=\"7345532711\"><\/ins>\n<script>\n(adsbygoogle = window.adsbygoogle || []).push({});\n<\/script>","tg_ipn_bottom_336":"<script async src=\"\/\/pagead2.googlesyndication.com\/pagead\/js\/adsbygoogle.js\"><\/script>\n<!-- tg_ipn_bottom_336 -->\n<ins class=\"adsbygoogle\"\n     style=\"display:inline-block;width:336px;height:280px\"\n     data-ad-client=\"ca-pub-1379083136098030\"\n     data-ad-slot=\"7782004309\"><\/ins>\n<script>\n(adsbygoogle = window.adsbygoogle || []).push({});\n<\/script>","tg_ipn_bottom_ng":"<!-- i-mobile for SmartPhone client script -->\n<script type=\"text\/javascript\">\n\timobile_tag_ver = \"0.2\";\n\timobile_pid = \"15055\";\n\timobile_asid = \"130369\";\n\timobile_type = \"inline\";\n<\/script>\n<script type=\"text\/javascript\" src=\"http:\/\/spad.i-mobile.co.jp\/script\/adssp.js?20110215\"><\/script>","tg_ipn_bottom_ng_336":"<!-- i-mobile for SmartPhone client script -->\n<script type=\"text\/javascript\">\n\timobile_tag_ver = \"0.2\";\n\timobile_pid = \"15055\";\n\timobile_asid = \"130369\";\n\timobile_type = \"inline\";\n<\/script>\n<script type=\"text\/javascript\" src=\"http:\/\/spad.i-mobile.co.jp\/script\/adssp.js?20110215\"><\/script>","tg_ipn_list_bottom_ng":"<!-- i-mobile for SmartPhone client script -->\n<script type=\"text\/javascript\">\n\timobile_tag_ver = \"0.3\";\n\timobile_pid = \"15055\";\n\timobile_asid = \"130365\";\n\timobile_type = \"inline\";\n<\/script>\n<script type=\"text\/javascript\" src=\"http:\/\/spad.i-mobile.co.jp\/script\/adssp.js?20110215\"><\/script>","tg_ipn_list_bottom_ng_336":"<!-- i-mobile for SmartPhone client script -->\n<script type=\"text\/javascript\">\n\timobile_tag_ver = \"0.3\";\n\timobile_pid = \"15055\";\n\timobile_asid = \"130365\";\n\timobile_type = \"inline\";\n<\/script>\n<script type=\"text\/javascript\" src=\"http:\/\/spad.i-mobile.co.jp\/script\/adssp.js?20110215\"><\/script>","tg_ipn_list_top_ng":"<!-- i-mobile for SmartPhone client script -->\n<script type=\"text\/javascript\">\n\timobile_tag_ver = \"0.3\";\n\timobile_pid = \"15055\";\n\timobile_asid = \"413047\";\n\timobile_type = \"inline\";\n<\/script>\n<script type=\"text\/javascript\" src=\"http:\/\/spad.i-mobile.co.jp\/script\/adssp.js?20110215\"><\/script>","tg_ipn_list_top_ng_336":"<!-- i-mobile for SmartPhone client script -->\n<script type=\"text\/javascript\">\n\timobile_tag_ver = \"0.3\";\n\timobile_pid = \"15055\";\n\timobile_asid = \"413047\";\n\timobile_type = \"inline\";\n<\/script>\n<script type=\"text\/javascript\" src=\"http:\/\/spad.i-mobile.co.jp\/script\/adssp.js?20110215\"><\/script>","tg_ipn_middle_ng_336":"<!-- i-mobile for SmartPhone client script -->\n<script type=\"text\/javascript\">\n\timobile_tag_ver = \"0.3\";\n\timobile_pid = \"15055\";\n\timobile_asid = \"528702\";\n\timobile_type = \"inline\";\n<\/script>\n<script type=\"text\/javascript\" src=\"http:\/\/spad.i-mobile.co.jp\/script\/adssp.js?20110215\"><\/script>"};
+-->
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77432-18', 'auto');
+  ga('set', 'dimension2', 'a_mochiya');
+  ga('set', 'dimension3', '1');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<script async="async" src="./注目のまとめ - Togetterまとめ_files/gpt.js.ダウンロード"></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/5453651/tg_ipn_list_bottom_336_dfp', [336, 280], 'div-gpt-ad-1471877962527-0').addService(googletag.pubads());
+    googletag.defineSlot('/5453651/tg_ipn_list_bottom', [336, 280], 'div-gpt-ad-1474725638955-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<script src="./注目のまとめ - Togetterまとめ_files/pubads_impl_95.js.ダウンロード" async=""></script><link rel="prefetch" href="http://tpc.googlesyndication.com/safeframe/1-0-4/html/container.html"><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style><style id="AutoPatchWork-style">#AutoPatchWork-Bar{
+	position:fixed !important;
+	bottom:0px !important;
+	left:0px !important;
+	right:0px !important;
+	height:0px !important;
+	background:rgba(0,255,0,0) !important;
+	border-top   :12px solid rgba(0, 255, 0, 0.01) !important;
+	border-bottom: 1px solid rgba(0, 255, 0,    1) !important;
+	color:rgba(0,0,0,0) !important;
+	z-index:10000 !important;
+	text-align:right;
+}
+#AutoPatchWork-Bar.off{
+	border-top   : 2px solid rgba(128, 128, 128, 0.1) !important;
+	border-bottom: 2px solid rgba(128, 128, 128, 0.1) !important;
+	margin-top:9px;
+}
+#AutoPatchWork-Bar:hover{
+	border-top-width:0px !important;
+	height:24px !important;
+	/*margin-top:-12px;*/
+	color:rgba(0,0,0,1) !important;
+	background-color:rgba(222,222,222,.75) !important;
+}
+#AutoPatchWork-Bar:hover:after{
+	position:absolute;
+	display:block;
+	top:0px !important;
+	left:10px !important;
+	content:"AutoPatchWork / ON" !important;
+	font-size:15px !important;
+}
+#AutoPatchWork-Bar.loading{
+	-webkit-animation-name: loading;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count:infinite;
+	animation-name: loading;
+	animation-duration: 1s;
+	animation-iteration-count:infinite;
+}
+@-webkit-keyframes loading {
+	from {
+		border-top-color   :rgba(0, 255, 255, 0.75);
+		border-bottom-color:rgba(0, 128, 255, 0.75);
+		border-top-width:1px;
+		border-bottom-width:12px;
+	}
+	to {
+		border-top-color   :rgba(0, 128, 255, 0.75);
+		border-bottom-color:rgba(0, 128, 255, 0.75);
+		border-top-width:12px;
+		border-bottom-width:1px;
+	}
+}
+@keyframes loading {
+	from {
+		border-top-color   :rgba(0, 255, 255, 0.75);
+		border-bottom-color:rgba(0, 128, 255, 0.75);
+		border-top-width:1px;
+		border-bottom-width:12px;
+	}
+	to {
+		border-top-color   :rgba(0, 128, 255, 0.75);
+		border-bottom-color:rgba(0, 128, 255, 0.75);
+		border-top-width:12px;
+		border-bottom-width:1px;
+	}
+}
+#AutoPatchWork-Bar.terminated{
+	border-top   :12px solid rgba(255, 128, 64, .5) !important;
+	border-bottom: 1px solid rgba(255, 128, 64, .5) !important;
+}
+#AutoPatchWork-Bar.error{
+	border-top   :12px solid rgba(255, 0, 0, .5) !important;
+	border-bottom: 1px solid rgba(255, 0, 0, .5) !important;
+}
+#AutoPatchWork-Bar.loading:hover:after{
+	content:"loading..." !important;
+}
+#AutoPatchWork-Bar.terminated:hover:after{
+	content:"terminated." !important;
+}
+#AutoPatchWork-Bar.error:hover:after{
+	content:"error" !important;
+}
+#AutoPatchWork-Bar.remove{
+	display:none !important;
+}
+#AutoPatchWork-Bar.off:hover:after{
+	content:"AutoPatchWork / OFF" !important;
+	color:#444 !important;
+}
+#AutoPatchWork-Bar button{
+	display:none;
+}
+#AutoPatchWork-Bar:hover button{
+	display:inline-block;
+	background: #222;
+	background: -webkit-gradient(linear, left top, left bottom,from(#222),to(#666));
+	color:#fff;
+	height:22px;
+	border:1px solid #aaa;
+	cursor:pointer;
+	margin:0px 0px 0px 10px;
+	width:160px;
+}
+.autopagerize_page_separator_blocks .autopagerize_link{
+  display:inline-block;
+}
+.autopagerize_page_separator_blocks .autopagerize_link:before{
+  content:"page: " attr(number);
+}
+</style></head>
+<body class="smartphone action_hot " data-pinterest-extension-installed="cr1.40" style="width: 320px;">
+<div id="document">
+	<header id="header">
+		<div class="inner">
+			<div id="toptitle"><a class="cssblk" href="http://togetter.com/">ツイッターをまとめよう - Togetterまとめ</a></div>
+			<div id="account_follow_box">
+				<a class="radius_share twitter" target="_blank" data-ga="social_header_twitter" href="http://twitter.com/intent/user?screen_name=togetter_jp"><i class="fa fa-twitter"></i></a>
+				<a class="radius_share facebook" target="_blank" data-ga="social_header_facebook" href="http://www.facebook.com/togetterjp"><i class="fa fa-facebook"></i></a>
+				<a class="radius_share line" data-ga="social_header_line" href="http://line.me/ti/p/%40jxs7473s"><i class="icon-line"></i></a>
+			</div>
+			<div class="sub_header_box">
+				<a class="user_icon" href="http://togetter.com/id/a_mochiya"><img src="./注目のまとめ - Togetterまとめ_files/l3MC8EWv_normal.jpg"></a>
+				<a class="btn menu_btn primary create" href="http://togetter.com/create"><i class="fa fa-pencil"></i></a>
+				<a class="btn menu_btn dropdown_wrap"><i class="fa fa-bars"></i></a>
+				<ul class="dropdown menu">
+					<li><a href="http://togetter.com/home">マイページ</a></li>
+                    <li><a href="http://togetter.com/accounts/id/a_mochiya">マイチャンネル</a></li>
+                    <li><a href="http://togetter.com/fav/a_mochiya">お気に入り</a></li>
+					<li><a href="http://togetter.com/accounts/fav/a_mochiya">お気に入りしたチャンネル</a></li>
+					<li><a href="http://togetter.com/notice">お知らせ</a></li>
+					<li><a href="http://togetter.com/logout?callback=%2Fhot">ログアウト</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+<header id="fixed_header">
+	<div class="inner">
+		<div class="header_navigator">
+			<div class="inner">
+				<div class="inner_left">
+				<ul class="header_link">
+					<li class="select"><a href="http://togetter.com/hot" data-ga="header_link_hot">注目</a></li>
+					<li class=""><a href="http://togetter.com/recentpopular" data-ga="header_link_hot">今週の人気</a></li>
+					<li class=""><a href="http://togetter.com/recent" data-ga="header_link_hot">新着まとめ</a></li>
+				</ul>
+				</div>
+				<div class="inner_right">
+					<div class="header_menu">
+						<a class="icon_account" href="http://togetter.com/accounts/hot" title="人気のチャンネル" data-ga="inbount_account_header"><i class="fa fa-users"></i></a>
+						<a class="icon_search" onclick="search_input.show();return false;" title="カテゴリーを開く" data-ga="search_show"><i class="fa fa-search"></i></a>
+						<a class="icon_menu_open" onclick="return false;" title="カテゴリーを開く" data-ga="category_show"><i class="fa fa-caret-down"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<div id="header_menu_box" class="header_menu_box">
+	<ul class="clearfix">
+
+		<li><a href="http://togetter.com/category" data-ga="header_link_hot">カテゴリー<i class="fa fa-chevron-right"></i></a></li>
+		<li><a href="http://togetter.com/meister" data-ga="header_link_hot">マイスターのまとめ<i class="fa fa-chevron-right"></i></a></li>
+		<li><a href="http://togetter.com/official" data-ga="header_link_hot">公式アカウントのまとめ<i class="fa fa-chevron-right"></i></a></li>
+		<li><a href="http://togetter.com/ranking/2016-10-04" data-ga="header_ranking">昨日のランキング<i class="fa fa-chevron-right"></i></a></li>
+	</ul>
+</div>
+<script type="text/javascript">
+new HeaderMenu();
+</script>
+<header id="search_header">
+	<div class="inner">
+		<div class="header_search_box">
+			<form action="http://togetter.com/search" method="GET" onsubmit="return search_input.check(this);" data-empty="キーワードを入力してください。">
+				<div class="input_group">
+					<span class="input_group_input search clear">
+						<input class="desc_input" type="text" name="q" size="30" placeholder="キーワードを入力" value="">
+						<label for="q"><i class="fa fa-search"></i></label>
+						<label for="q" onclick="$(this).siblings(&#39;input.desc_input&#39;).val(&#39;&#39;);return false;"><i class="fa fa-times-circle"></i></label>
+					</span>
+					<span class="input_group_btn"><input class="btn" type="submit" value="検索"></span>
+				</div>
+				<label><input type="radio" name="t" value="q" checked="">キーワード</label>
+				<label><input type="radio" name="t" value="u">ユーザ名</label>
+			</form>
+<script type="text/javascript">
+var search_input = new SearchInput();
+</script>
+		</div>
+	</div>
+</header>
+<header id="crumb_header">
+	<div class="inner">
+		<ul class="header_crumb">
+                <li class="push_links"><a href="http://togetter.com/li/1030634" data-ga="header_pushlink">
+                                                    <span class="crumb_prefix">神木きゅん</span>
+                                                    <span class="">今週のトゥギ..</span>
+                                            </a></li>
+                <li class="push_links"><a href="http://togetter.com/li/1023876" data-ga="header_pushlink">
+                                                    <span class="crumb_prefix">#料理実況</span>
+                                                    <span class="">お料理まとめ..</span>
+                                            </a></li>
+		</ul>
+	</div>
+</header>
+	<div id="main_contents" class="contents">
+		<div class="contents_main">
+        <div class="category_line_header">
+                    <ul class="category_line_box">
+                    </ul>
+                </div>
+    		<div class="title_category_box head_title">
+			<div>
+							<h1><a href="http://togetter.com/hot">注目のまとめ</a></h1>
+							<p>いまネット上で話題になっている注目のまとめをお知らせします。</p>
+			</div>
+		</div>
+			<ul class="simple_list">
+<li class="promotion has_thumb clearfix">
+        <div class="thumb">
+        <a href="http://togetter.com/li/1032219" data-ga="inbound_"><img src="./注目のまとめ - Togetterまとめ_files/CtzA9lOUAAARJvC.jpg-thumb" onerror="errorImg(this);" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png"></a>
+    </div>
+    	<div class="inner">
+		<a href="http://togetter.com/li/1032219" data-ga="inbound_">
+			<h3 title="「モンストやるなよ」のCMが意味不明…しかし理由を知ると逆に背中を押されてしまう">「モンストやるなよ」のCMが意味不明…しかし理由を知ると逆に背中を押されてしまう</h3>
+		</a>
+		<div class="content">
+                            <img class="icon_24 lazy data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/660024395314761728/yuC9ueR8_normal.png" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/yuC9ueR8_normal.png">
+                <a class="category_link" href="http://togetter.com/top/subculture">サブカルチャー</a>,<a class="category_link" href="http://togetter.com/top/subculture/63">ゲーム</a>			<span class="view_str"><span>29081</span> view</span>
+			            <span class="count_facebook bindclick" data-href="http://togetter.com/li/1032219"><i class="fa fa-facebook-square"></i>6</span>
+            			            <span class="count_twitter bindclick" data-href="http://togetter.com/li/1032219"><i class="fa fa-twitter"></i>50</span>
+                                    <span class="http-bookmark bindclick" data-href="http://togetter.com/li/1032219">8 users</span>
+            		</div>
+	</div>
+	<div class="state_label_box"><div class="state_label pr"><span>PR</span></div></div></li>
+<li class="  clearfix">
+    	<div class="inner">
+		<a href="http://togetter.com/li/1033016" data-ga="inbound_">
+			<h3 title="【これは悲しい…】客「爬虫類や虫を触っている人が働いてるコンビニなんて考えられない。行きたくなくなるから辞めさせろ。」店員「衛生管理は徹底してます」→結果は…">【これは悲しい…】客「爬虫類や虫を触っている人が働いてるコンビニなんて考えられない。行きたくなくなるから辞めさせろ。..</h3>
+		</a>
+		<div class="content">
+                            <img class="icon_24 lazy data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/633054815455604736/FLufb73v_normal.jpg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/FLufb73v_normal.jpg">
+                <a class="category_link" href="http://togetter.com/top/news">ニュース</a>,<a class="category_link" href="http://togetter.com/top/news/3">速報</a>			<span class="view_str"><span>68565</span> view</span>
+			            <span class="count_facebook bindclick" data-href="http://togetter.com/li/1033016"><i class="fa fa-facebook-square"></i>242</span>
+            			            <span class="count_twitter bindclick" data-href="http://togetter.com/li/1033016"><i class="fa fa-twitter"></i>947</span>
+                                    <span class="http-bookmark bindclick" data-href="http://togetter.com/li/1033016">402 users</span>
+            		</div>
+	</div>
+	<div class="state_label_box"><div class="state_label new"><span>new</span></div></div></li>
+<li class=" has_thumb clearfix">
+        <div class="thumb">
+        <a href="http://togetter.com/li/1033113" data-ga="inbound_"><img src="./注目のまとめ - Togetterまとめ_files/687474703a2f2f696e7374616772616d2e636f6d2f702f424c4942374949444665482f6d656469612f3f73697a653d6c" onerror="errorImg(this);" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png"></a>
+    </div>
+    	<div class="inner">
+		<a href="http://togetter.com/li/1033113" data-ga="inbound_">
+			<h3 title="とあるデザイナーさんが髪の毛をピンク色に染めた理由にデザイナーと営業職の本音が垣間見える">とあるデザイナーさんが髪の毛をピンク色に染めた理由にデザイナーと営業職の本音が垣間見える</h3>
+		</a>
+		<div class="content">
+                            <img class="icon_24 lazy data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/739476356388376577/6ZuWZ6sL_normal.jpg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/6ZuWZ6sL_normal.jpg">
+                <a class="category_link" href="http://togetter.com/top/archive">ログ・日記</a>,<a class="category_link" href="http://togetter.com/top/archive/112">雑談</a>			<span class="view_str"><span>10088</span> view</span>
+			            <span class="count_facebook bindclick" data-href="http://togetter.com/li/1033113"><i class="fa fa-facebook-square"></i>1</span>
+            			            <span class="count_twitter bindclick" data-href="http://togetter.com/li/1033113"><i class="fa fa-twitter"></i>47</span>
+                                    <span class="http-bookmark bindclick" data-href="http://togetter.com/li/1033113">2 users</span>
+            		</div>
+	</div>
+	<div class="state_label_box"><div class="state_label new"><span>new</span></div></div></li>
+<li class="  clearfix">
+    	<div class="inner">
+		<a href="http://togetter.com/li/1033099" data-ga="inbound_">
+			<h3 title="北大混浴同好会　わずか１週間ほどで活動停止">北大混浴同好会　わずか１週間ほどで活動停止</h3>
+		</a>
+		<div class="content">
+                            <img class="icon_24 lazy data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/2316265593/yhe1dgjhb1fvuqeamjwz_normal.jpeg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/yhe1dgjhb1fvuqeamjwz_normal.jpeg">
+                <a class="category_link" href="http://togetter.com/top/archive">ログ・日記</a>,<a class="category_link" href="http://togetter.com/top/archive/113">メモ</a>			<span class="view_str"><span>8499</span> view</span>
+			            <span class="count_facebook bindclick" data-href="http://togetter.com/li/1033099"><i class="fa fa-facebook-square"></i>5</span>
+            			            <span class="count_twitter bindclick" data-href="http://togetter.com/li/1033099"><i class="fa fa-twitter"></i>95</span>
+                                    <span class="http-bookmark bindclick" data-href="http://togetter.com/li/1033099">9 users</span>
+            		</div>
+	</div>
+	<div class="state_label_box"><div class="state_label new"><span>new</span></div></div></li>
+<li class="  clearfix">
+    	<div class="inner">
+		<a href="http://togetter.com/li/1033025" data-ga="inbound_">
+			<h3 title="「若いうちに本を読んでおいた方が良い」様々な理由があるがその中で最も大人たちを納得させたものとは">「若いうちに本を読んでおいた方が良い」様々な理由があるがその中で最も大人たちを納得させたものとは</h3>
+		</a>
+		<div class="content">
+                            <img class="icon_24 lazy data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/709259706959724544/Xr7JYj2w_normal.jpg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/Xr7JYj2w_normal.jpg">
+                <a class="category_link" href="http://togetter.com/top/life">生活</a>,<a class="category_link" href="http://togetter.com/top/life/90">健康・医療</a>			<span class="view_str"><span>24092</span> view</span>
+			            <span class="count_facebook bindclick" data-href="http://togetter.com/li/1033025"><i class="fa fa-facebook-square"></i>82</span>
+            			            <span class="count_twitter bindclick" data-href="http://togetter.com/li/1033025"><i class="fa fa-twitter"></i>324</span>
+                                    <span class="http-bookmark bindclick" data-href="http://togetter.com/li/1033025">31 users</span>
+            		</div>
+	</div>
+	<div class="state_label_box"><div class="state_label new"><span>new</span></div></div></li>
+<li class=" has_thumb clearfix">
+        <div class="thumb">
+        <a href="http://togetter.com/li/1033058" data-ga="inbound_"><img src="./注目のまとめ - Togetterまとめ_files/Ct9iS9ZVUAAggyU.jpg-thumb" onerror="errorImg(this);" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png"></a>
+    </div>
+    	<div class="inner">
+		<a href="http://togetter.com/li/1033058" data-ga="inbound_">
+			<h3 title="ジャパンミート（肉のハナマサ）の株主優待が着々と届き始め、株主の冷凍庫を逼迫させているもよう">ジャパンミート（肉のハナマサ）の株主優待が着々と届き始め、株主の冷凍庫を逼迫させているもよう</h3>
+		</a>
+		<div class="content">
+                            <img class="icon_24 lazy data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/540334483342229504/NNo5YckA_normal.jpeg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/NNo5YckA_normal.jpeg">
+                <a class="category_link" href="http://togetter.com/top/life">生活</a>,<a class="category_link" href="http://togetter.com/top/life/174">料理</a>			<span class="view_str"><span>11805</span> view</span>
+			            <span class="count_facebook bindclick" data-href="http://togetter.com/li/1033058"><i class="fa fa-facebook-square"></i>16</span>
+            			            <span class="count_twitter bindclick" data-href="http://togetter.com/li/1033058"><i class="fa fa-twitter"></i>107</span>
+                                    <span class="http-bookmark bindclick" data-href="http://togetter.com/li/1033058">7 users</span>
+            		</div>
+	</div>
+	<div class="state_label_box"><div class="state_label new"><span>new</span></div></div></li>
+<li class=" has_thumb clearfix">
+        <div class="thumb">
+        <a href="http://togetter.com/li/1033046" data-ga="inbound_"><img src="./注目のまとめ - Togetterまとめ_files/Ct9UXG8VMAAnBlf.jpg-thumb" onerror="errorImg(this);" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png"></a>
+    </div>
+    	<div class="inner">
+		<a href="http://togetter.com/li/1033046" data-ga="inbound_">
+			<h3 title="「サイトに表示される広告でスクロールとともに動くヤツがうざい」に同意の声が多数">「サイトに表示される広告でスクロールとともに動くヤツがうざい」に同意の声が多数</h3>
+		</a>
+		<div class="content">
+                            <img class="icon_24 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/578399490228416512/6OC2XIAy_normal.jpeg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+                <a class="category_link" href="http://togetter.com/top/computer">IT・Web</a>,<a class="category_link" href="http://togetter.com/top/computer/42">インターネット</a>			<span class="view_str"><span>10543</span> view</span>
+			            <span class="count_facebook bindclick" data-href="http://togetter.com/li/1033046"><i class="fa fa-facebook-square"></i>4</span>
+            			            <span class="count_twitter bindclick" data-href="http://togetter.com/li/1033046"><i class="fa fa-twitter"></i>71</span>
+                                    <span class="http-bookmark bindclick" data-href="http://togetter.com/li/1033046">2 users</span>
+            		</div>
+	</div>
+	<div class="state_label_box"><div class="state_label new"><span>new</span></div></div></li>
+<li class=" has_thumb clearfix">
+        <div class="thumb">
+        <a href="http://togetter.com/li/1033053" data-ga="inbound_"><img src="./注目のまとめ - Togetterまとめ_files/Ct8xJawVIAAMjSj.jpg-thumb" onerror="errorImg(this);" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png"></a>
+    </div>
+    	<div class="inner">
+		<a href="http://togetter.com/li/1033053" data-ga="inbound_">
+			<h3 title="『君の名は。』制作会社社長が語る大ヒットの軌跡は最高レベルの動画陣の存在がキーだった">『君の名は。』制作会社社長が語る大ヒットの軌跡は最高レベルの動画陣の存在がキーだった</h3>
+		</a>
+		<div class="content">
+                            <img class="icon_24 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/578399490228416512/6OC2XIAy_normal.jpeg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+                <a class="category_link" href="http://togetter.com/top/subculture">サブカルチャー</a>,<a class="category_link" href="http://togetter.com/top/subculture/62">アニメ</a>			<span class="view_str"><span>3650</span> view</span>
+			            <span class="count_facebook bindclick" data-href="http://togetter.com/li/1033053"><i class="fa fa-facebook-square"></i>4</span>
+            			            <span class="count_twitter bindclick" data-href="http://togetter.com/li/1033053"><i class="fa fa-twitter"></i>89</span>
+                                    <span class="http-bookmark bindclick" data-href="http://togetter.com/li/1033053">13 users</span>
+            		</div>
+	</div>
+	<div class="state_label_box"><div class="state_label new"><span>new</span></div></div></li>
+<li class=" has_thumb clearfix">
+        <div class="thumb">
+        <a href="http://togetter.com/li/1033074" data-ga="inbound_"><img src="./注目のまとめ - Togetterまとめ_files/Ct6xEPIUkAA1KI4.jpg-thumb" onerror="errorImg(this);" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png"></a>
+    </div>
+    	<div class="inner">
+		<a href="http://togetter.com/li/1033074" data-ga="inbound_">
+			<h3 title="「真弓定夫と内海聡のどこまで話そうか」FM西東京の放送に関するtwitterの反応">「真弓定夫と内海聡のどこまで話そうか」FM西東京の放送に関するtwitterの反応</h3>
+		</a>
+		<div class="content">
+                            <img class="icon_24 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/733193831030497281/J22UCNBu_normal.jpg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+                <a class="category_link" href="http://togetter.com/top/entertainment">エンタメ</a>,<a class="category_link" href="http://togetter.com/top/entertainment/31">ラジオ</a>			<span class="view_str"><span>4019</span> view</span>
+			            <span class="count_facebook bindclick" data-href="http://togetter.com/li/1033074"><i class="fa fa-facebook-square"></i>118</span>
+            			            <span class="count_twitter bindclick" data-href="http://togetter.com/li/1033074"><i class="fa fa-twitter"></i>92</span>
+                                    <span class="http-bookmark bindclick" data-href="http://togetter.com/li/1033074">1 user</span>
+            		</div>
+	</div>
+	<div class="state_label_box"><div class="state_label new"><span>new</span></div></div></li>
+<li class=" has_thumb clearfix">
+        <div class="thumb">
+        <a href="http://togetter.com/li/1033123" data-ga="inbound_"><img src="./注目のまとめ - Togetterまとめ_files/687474703a2f2f7062732e7477696d672e636f6d2f74776565745f766964656f5f7468756d622f43743358765530576741413352396b2e6a7067" onerror="errorImg(this);" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png"></a>
+    </div>
+    	<div class="inner">
+		<a href="http://togetter.com/li/1033123" data-ga="inbound_">
+			<h3 title="【爆笑注意】「サーバー管理者 VS DDos攻撃」とはどんな戦いであるのかがよく分かる映像が秀逸！">【爆笑注意】「サーバー管理者 VS DDos攻撃」とはどんな戦いであるのかがよく分かる映像が秀逸！</h3>
+		</a>
+		<div class="content">
+                            <img class="icon_24 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/583614036991873024/tAS_HObL_normal.jpg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+                <a class="category_link" href="http://togetter.com/top/computer">IT・Web</a>,<a class="category_link" href="http://togetter.com/top/computer/42">インターネット</a>			<span class="view_str"><span>4319</span> view</span>
+			            <span class="count_facebook bindclick" data-href="http://togetter.com/li/1033123"><i class="fa fa-facebook-square"></i>29</span>
+            			            <span class="count_twitter bindclick" data-href="http://togetter.com/li/1033123"><i class="fa fa-twitter"></i>26</span>
+                                    <span class="http-bookmark bindclick" data-href="http://togetter.com/li/1033123">3 users</span>
+            		</div>
+	</div>
+	<div class="state_label_box"><div class="state_label new"><span>new</span></div></div></li>
+<li class=" has_thumb clearfix">
+        <div class="thumb">
+        <a href="http://togetter.com/li/1032983" data-ga="inbound_"><img src="./注目のまとめ - Togetterまとめ_files/Ct7Z7D9VUAAgkAI.jpg-thumb" onerror="errorImg(this);" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png"></a>
+    </div>
+    	<div class="inner">
+		<a href="http://togetter.com/li/1032983" data-ga="inbound_">
+			<h3 title="「東日本大震災で妊産婦らが病院をたらい回し…」という記事に、仙台の産科医・室月淳氏が異議。そのやり取り。">「東日本大震災で妊産婦らが病院をたらい回し…」という記事に、仙台の産科医・室月淳氏が異議。そのやり取り。</h3>
+		</a>
+		<div class="content">
+                            <img class="icon_24 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/607325394560126976/Bv5trP3t_normal.jpg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+                <a class="category_link" href="http://togetter.com/top/social">社会</a>,<a class="category_link" href="http://togetter.com/top/social/186">社会問題</a>			<span class="view_str"><span>22970</span> view</span>
+			            <span class="count_facebook bindclick" data-href="http://togetter.com/li/1032983"><i class="fa fa-facebook-square"></i>40</span>
+            			            <span class="count_twitter bindclick" data-href="http://togetter.com/li/1032983"><i class="fa fa-twitter"></i>534</span>
+                                    <span class="http-bookmark bindclick" data-href="http://togetter.com/li/1032983">49 users</span>
+            		</div>
+	</div>
+	<div class="state_label_box"><div class="state_label new"><span>new</span></div></div></li>
+<li class=" has_thumb clearfix">
+        <div class="thumb">
+        <a href="http://togetter.com/li/1033042" data-ga="inbound_"><img src="./注目のまとめ - Togetterまとめ_files/Ct1Y2xKUMAAerom.jpg-thumb" onerror="errorImg(this);" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png"></a>
+    </div>
+    	<div class="inner">
+		<a href="http://togetter.com/li/1033042" data-ga="inbound_">
+			<h3 title="大隅先生の弟子、水島先生の「トリコ」への衝撃 「Natureよりも読者数が多い“超”有名ジャーナル『週刊少年ジャンプ』で、オートファジーの解説が！」">大隅先生の弟子、水島先生の「トリコ」への衝撃 「Natureよりも読者数が多い“超”有名ジャーナル『週刊少年ジャンプ..</h3>
+		</a>
+		<div class="content">
+                            <img class="icon_24 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/548098970426159104/p1AnAdR0_normal.jpeg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+                <a class="category_link" href="http://togetter.com/top/knowledge">学問・教養</a>,<a class="category_link" href="http://togetter.com/top/knowledge/50">科学</a>			<span class="view_str"><span>4162</span> view</span>
+			            <span class="count_facebook bindclick" data-href="http://togetter.com/li/1033042"><i class="fa fa-facebook-square"></i>4</span>
+            			            <span class="count_twitter bindclick" data-href="http://togetter.com/li/1033042"><i class="fa fa-twitter"></i>24</span>
+                                    <span class="http-bookmark bindclick" data-href="http://togetter.com/li/1033042">8 users</span>
+            		</div>
+	</div>
+	<div class="state_label_box"><div class="state_label new"><span>new</span></div></div></li>
+<li class="  clearfix">
+    	<div class="inner">
+		<a href="http://togetter.com/li/1033077" data-ga="inbound_">
+			<h3 title="なぜ国会質問が（答弁を作る）官僚に渡るのは深夜になってしまうのか">なぜ国会質問が（答弁を作る）官僚に渡るのは深夜になってしまうのか</h3>
+		</a>
+		<div class="content">
+                            <img class="icon_24 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/583102148214296578/x-sAJjw__normal.jpg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+                <a class="category_link" href="http://togetter.com/top/social">社会</a>,<a class="category_link" href="http://togetter.com/top/social/10">政治</a>			<span class="view_str"><span>9287</span> view</span>
+			            <span class="count_facebook bindclick" data-href="http://togetter.com/li/1033077"><i class="fa fa-facebook-square"></i>7</span>
+            			            <span class="count_twitter bindclick" data-href="http://togetter.com/li/1033077"><i class="fa fa-twitter"></i>208</span>
+                                    <span class="http-bookmark bindclick" data-href="http://togetter.com/li/1033077">20 users</span>
+            		</div>
+	</div>
+	<div class="state_label_box"><div class="state_label new"><span>new</span></div></div></li>
+<li class="  clearfix">
+    	<div class="inner">
+		<a href="http://togetter.com/li/1033081" data-ga="inbound_">
+			<h3 title="診察室のホワイジャパニーズピーポー">診察室のホワイジャパニーズピーポー</h3>
+		</a>
+		<div class="content">
+                            <img class="icon_24 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/709697186632564736/3zxt9PR7_normal.jpg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+                <a class="category_link" href="http://togetter.com/top/knowledge">学問・教養</a>,<a class="category_link" href="http://togetter.com/top/knowledge/60">その他</a>			<span class="view_str"><span>4977</span> view</span>
+			            <span class="count_facebook bindclick" data-href="http://togetter.com/li/1033081"><i class="fa fa-facebook-square"></i>28</span>
+            			            <span class="count_twitter bindclick" data-href="http://togetter.com/li/1033081"><i class="fa fa-twitter"></i>101</span>
+                        		</div>
+	</div>
+	<div class="state_label_box"><div class="state_label new"><span>new</span></div></div></li>
+<li class=" has_thumb clearfix">
+        <div class="thumb">
+        <a href="http://togetter.com/li/1033156" data-ga="inbound_"><img src="./注目のまとめ - Togetterまとめ_files/Ct03vIuUIAAjLfA.jpg-thumb" onerror="errorImg(this);" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png"></a>
+    </div>
+    	<div class="inner">
+		<a href="http://togetter.com/li/1033156" data-ga="inbound_">
+			<h3 title="8日(土)『嵐になるまで待って』会場「春日井市民会館」への名古屋からの行き方早わかり!!">8日(土)『嵐になるまで待って』会場「春日井市民会館」への名古屋からの行き方早わかり!!</h3>
+		</a>
+		<div class="content">
+                            <img class="icon_24 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/378800000626808186/b1ad353e155704926620b42c54c06e32_normal.jpeg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+                <a class="category_link" href="http://togetter.com/top/entertainment">エンタメ</a>,<a class="category_link" href="http://togetter.com/top/entertainment/69">舞台芸術</a>,<a class="category_link" href="http://togetter.com/top/entertainment/230">演劇</a>			<span class="view_str"><span>331</span> view</span>
+			            <span class="count_facebook bindclick" data-href="http://togetter.com/li/1033156"><i class="fa fa-facebook-square"></i>18</span>
+            			            <span class="count_twitter bindclick" data-href="http://togetter.com/li/1033156"><i class="fa fa-twitter"></i>12</span>
+                        		</div>
+	</div>
+	<div class="state_label_box"><div class="state_label new"><span>new</span></div></div></li>
+<li class=" has_thumb clearfix">
+        <div class="thumb">
+        <a href="http://togetter.com/li/1032654" data-ga="inbound_"><img src="./注目のまとめ - Togetterまとめ_files/Ct4-L7NUsAEikrq.jpg-thumb" onerror="errorImg(this);" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png"></a>
+    </div>
+    	<div class="inner">
+		<a href="http://togetter.com/li/1032654" data-ga="inbound_">
+			<h3 title="Hi-STANDARD、16年ぶりの新譜を告知一切なしでゲリラ発売「ここまで情報漏れないのすごい」">Hi-STANDARD、16年ぶりの新譜を告知一切なしでゲリラ発売「ここまで情報漏れないのすごい」</h3>
+		</a>
+		<div class="content">
+                            <img class="icon_24 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/540334483342229504/NNo5YckA_normal.jpeg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+                <a class="category_link" href="http://togetter.com/top/entertainment">エンタメ</a>,<a class="category_link" href="http://togetter.com/top/entertainment/67">音楽</a>			<span class="view_str"><span>67642</span> view</span>
+			            <span class="count_facebook bindclick" data-href="http://togetter.com/li/1032654"><i class="fa fa-facebook-square"></i>5585</span>
+            			            <span class="count_twitter bindclick" data-href="http://togetter.com/li/1032654"><i class="fa fa-twitter"></i>361</span>
+                                    <span class="http-bookmark bindclick" data-href="http://togetter.com/li/1032654">33 users</span>
+            		</div>
+	</div>
+	<div class="state_label_box"></div></li>
+<li class=" has_thumb clearfix">
+        <div class="thumb">
+        <a href="http://togetter.com/li/1033142" data-ga="inbound_"><img src="./注目のまとめ - Togetterまとめ_files/Ct9yS8SUIAAwCk_.jpg-thumb" onerror="errorImg(this);" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png"></a>
+    </div>
+    	<div class="inner">
+		<a href="http://togetter.com/li/1033142" data-ga="inbound_">
+			<h3 title="小児科のハロウィンが本気すぎると話題に→思ったのと全然違った">小児科のハロウィンが本気すぎると話題に→思ったのと全然違った</h3>
+		</a>
+		<div class="content">
+                            <img class="icon_24 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/781548714393374720/83luF2vr_normal.jpg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+                <a class="category_link" href="http://togetter.com/top/picture">画像・動画</a>,<a class="category_link" href="http://togetter.com/top/picture/222">写真</a>			<span class="view_str"><span>3555</span> view</span>
+						            <span class="count_twitter bindclick" data-href="http://togetter.com/li/1033142"><i class="fa fa-twitter"></i>9</span>
+                                    <span class="http-bookmark bindclick" data-href="http://togetter.com/li/1033142">1 user</span>
+            		</div>
+	</div>
+	<div class="state_label_box"><div class="state_label new"><span>new</span></div></div></li>
+<li class=" has_thumb clearfix">
+        <div class="thumb">
+        <a href="http://togetter.com/li/1032776" data-ga="inbound_"><img src="./注目のまとめ - Togetterまとめ_files/Ctw6-yfVYAAi0_7.jpg-thumb" onerror="errorImg(this);" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png"></a>
+    </div>
+    	<div class="inner">
+		<a href="http://togetter.com/li/1032776" data-ga="inbound_">
+			<h3 title="仙台・ホテル瑞鳳の食べ放題、これまでの人生の内でほかを寄せ付けないブッチギリの優勝であった">仙台・ホテル瑞鳳の食べ放題、これまでの人生の内でほかを寄せ付けないブッチギリの優勝であった</h3>
+		</a>
+		<div class="content">
+                            <img class="icon_24 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/540334483342229504/NNo5YckA_normal.jpeg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+                <a class="category_link" href="http://togetter.com/top/life">生活</a>,<a class="category_link" href="http://togetter.com/top/life/86">グルメ</a>			<span class="view_str"><span>43934</span> view</span>
+			            <span class="count_facebook bindclick" data-href="http://togetter.com/li/1032776"><i class="fa fa-facebook-square"></i>290</span>
+            			            <span class="count_twitter bindclick" data-href="http://togetter.com/li/1032776"><i class="fa fa-twitter"></i>689</span>
+                                    <span class="http-bookmark bindclick" data-href="http://togetter.com/li/1032776">430 users</span>
+            		</div>
+	</div>
+	<div class="state_label_box"></div></li>
+<li class="  clearfix">
+    	<div class="inner">
+		<a href="http://togetter.com/li/1033037" data-ga="inbound_">
+			<h3 title="【クソ上司】「俺定時で帰るけどお前その仕事やっとけよ。タイムカード押しといてやっから」→辞められるまで">【クソ上司】「俺定時で帰るけどお前その仕事やっとけよ。タイムカード押しといてやっから」→辞められるまで</h3>
+		</a>
+		<div class="content">
+                            <img class="icon_24 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/694379780381085696/MzrAbtXi_normal.jpg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+                <a class="category_link" href="http://togetter.com/top/work">仕事</a>,<a class="category_link" href="http://togetter.com/top/work/208">働き方</a>			<span class="view_str"><span>25547</span> view</span>
+						            <span class="count_twitter bindclick" data-href="http://togetter.com/li/1033037"><i class="fa fa-twitter"></i>82</span>
+                                    <span class="http-bookmark bindclick" data-href="http://togetter.com/li/1033037">6 users</span>
+            		</div>
+	</div>
+	<div class="state_label_box"><div class="state_label new"><span>new</span></div></div></li>
+<li class=" has_thumb clearfix">
+        <div class="thumb">
+        <a href="http://togetter.com/li/1033070" data-ga="inbound_"><img src="./注目のまとめ - Togetterまとめ_files/Ct7uifMUEAAxj7w.jpg-thumb" onerror="errorImg(this);" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png"></a>
+    </div>
+    	<div class="inner">
+		<a href="http://togetter.com/li/1033070" data-ga="inbound_">
+			<h3 title="台風１８号、新潟県初上陸？気象・防災情報まとめ、経過情報も見て避難等の判断の参考にどぞ">台風１８号、新潟県初上陸？気象・防災情報まとめ、経過情報も見て避難等の判断の参考にどぞ</h3>
+		</a>
+		<div class="content">
+                            <img class="icon_24 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/1751218780/origin1319076204108_normal.gif" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+                <a class="category_link" href="http://togetter.com/top/local">地域</a>,<a class="category_link" href="http://togetter.com/top/local/22">北陸・信越</a>			<span class="view_str"><span>1273</span> view</span>
+			            <span class="count_facebook bindclick" data-href="http://togetter.com/li/1033070"><i class="fa fa-facebook-square"></i>34</span>
+            			            <span class="count_twitter bindclick" data-href="http://togetter.com/li/1033070"><i class="fa fa-twitter"></i>8</span>
+                        		</div>
+	</div>
+	<div class="state_label_box"><div class="state_label new"><span>new</span></div></div></li>
+<li class="  clearfix">
+    	<div class="inner">
+		<a href="http://togetter.com/li/1033083" data-ga="inbound_">
+			<h3 title="「君の名は。」のような入れ替わり系はなぜ同じ国の人同士が多いんだ？インド人とは入れ替わらないの？→大喜利が始まる">「君の名は。」のような入れ替わり系はなぜ同じ国の人同士が多いんだ？インド人とは入れ替わらないの？→大喜利が始まる</h3>
+		</a>
+		<div class="content">
+                            <img class="icon_24 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/743682321052643328/8J1fpb8W_normal.jpg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+                <a class="category_link" href="http://togetter.com/top/subculture">サブカルチャー</a>,<a class="category_link" href="http://togetter.com/top/subculture/62">アニメ</a>			<span class="view_str"><span>3791</span> view</span>
+			            <span class="count_facebook bindclick" data-href="http://togetter.com/li/1033083"><i class="fa fa-facebook-square"></i>6</span>
+            			            <span class="count_twitter bindclick" data-href="http://togetter.com/li/1033083"><i class="fa fa-twitter"></i>44</span>
+                                    <span class="http-bookmark bindclick" data-href="http://togetter.com/li/1033083">13 users</span>
+            		</div>
+	</div>
+	<div class="state_label_box"><div class="state_label new"><span>new</span></div></div></li>
+<li class=" has_thumb clearfix">
+        <div class="thumb">
+        <a href="http://togetter.com/li/1033085" data-ga="inbound_"><img src="./注目のまとめ - Togetterまとめ_files/Ct7PjWUVUAE4F2Q.jpg-thumb" onerror="errorImg(this);" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png"></a>
+    </div>
+    	<div class="inner">
+		<a href="http://togetter.com/li/1033085" data-ga="inbound_">
+			<h3 title="“へそ曲り”でつかんだノーベル賞#クロ現プラス#NHK">“へそ曲り”でつかんだノーベル賞#クロ現プラス#NHK</h3>
+		</a>
+		<div class="content">
+                            <img class="icon_24 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/660024395314761728/yuC9ueR8_normal.png" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+                <a class="category_link" href="http://togetter.com/top/entertainment">エンタメ</a>,<a class="category_link" href="http://togetter.com/top/entertainment/30">テレビ</a>			<span class="view_str"><span>639</span> view</span>
+						            		</div>
+	</div>
+	<div class="state_label_box"><div class="state_label new"><span>new</span></div></div></li>
+<li class=" has_thumb clearfix">
+        <div class="thumb">
+        <a href="http://togetter.com/li/1033168" data-ga="inbound_"><img src="./注目のまとめ - Togetterまとめ_files/Ct-RkQAUkAkymq4.jpg-thumb" onerror="errorImg(this);" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png"></a>
+    </div>
+    	<div class="inner">
+		<a href="http://togetter.com/li/1033168" data-ga="inbound_">
+			<h3 title="タワレコ、HMV、ユニオン…ハイスタの16年ぶり新作を販売しているCDショップの熱いツイート集">タワレコ、HMV、ユニオン…ハイスタの16年ぶり新作を販売しているCDショップの熱いツイート集</h3>
+		</a>
+		<div class="content">
+                            <img class="icon_24 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/707994251959803904/9v3O2oex_normal.jpg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+                <a class="category_link" href="http://togetter.com/top/entertainment">エンタメ</a>,<a class="category_link" href="http://togetter.com/top/entertainment/67">音楽</a>			<span class="view_str"><span>549</span> view</span>
+			            <span class="count_facebook bindclick" data-href="http://togetter.com/li/1033168"><i class="fa fa-facebook-square"></i>3</span>
+            			            <span class="count_twitter bindclick" data-href="http://togetter.com/li/1033168"><i class="fa fa-twitter"></i>4</span>
+                        		</div>
+	</div>
+	<div class="state_label_box"><div class="state_label new"><span>new</span></div></div></li>
+<li class="  clearfix">
+    	<div class="inner">
+		<a href="http://togetter.com/li/1033178" data-ga="inbound_">
+			<h3 title="ジロウさんjiro6663 今の30代、40代、20年前と比べたらみんな綺麗になったものなあ。">ジロウさんjiro6663 今の30代、40代、20年前と比べたらみんな綺麗になったものなあ。</h3>
+		</a>
+		<div class="content">
+                            <img class="icon_24 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/1178903267/DSC00471_s_normal.JPG" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+                <a class="category_link" href="http://togetter.com/top/life">生活</a>,<a class="category_link" href="http://togetter.com/top/life/87">恋愛</a>			<span class="view_str"><span>184</span> view</span>
+			            <span class="count_facebook bindclick" data-href="http://togetter.com/li/1033178"><i class="fa fa-facebook-square"></i>4</span>
+            			            <span class="count_twitter bindclick" data-href="http://togetter.com/li/1033178"><i class="fa fa-twitter"></i>1</span>
+                        		</div>
+	</div>
+	<div class="state_label_box"><div class="state_label new"><span>new</span></div></div></li>
+<li class=" has_thumb clearfix">
+        <div class="thumb">
+        <a href="http://togetter.com/li/1033196" data-ga="inbound_"><img src="./注目のまとめ - Togetterまとめ_files/Ct_4ET0VIAAYlzM.jpg-thumb" onerror="errorImg(this);" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png"></a>
+    </div>
+    	<div class="inner">
+		<a href="http://togetter.com/li/1033196" data-ga="inbound_">
+			<h3 title="#ftvみんなの天気　まとめました！　2016.10.5 今日も福島の素敵な写真がいっぱい！">#ftvみんなの天気　まとめました！　2016.10.5 今日も福島の素敵な写真がいっぱい！</h3>
+		</a>
+		<div class="content">
+                            <img class="icon_24 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/458632188116750336/1hal6FjX_normal.jpeg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+                <a class="category_link" href="http://togetter.com/top/life">生活</a>,<a class="category_link" href="http://togetter.com/top/life/220">天気</a>			<span class="view_str"><span>212</span> view</span>
+						            <span class="count_twitter bindclick" data-href="http://togetter.com/li/1033196"><i class="fa fa-twitter"></i>18</span>
+                        		</div>
+	</div>
+	<div class="state_label_box"><div class="state_label new"><span>new</span></div></div></li>
+			</ul>
+	<div class="pagenation">
+			<a class="pagenation_part current" rel="" href="http://togetter.com/hot">1</a>
+			<a class="pagenation_part " rel="next" href="http://togetter.com/hot?page=2">2</a>
+			<a class="pagenation_part " rel="" href="http://togetter.com/hot?page=3">3</a>
+			<a class="pagenation_part" href="http://togetter.com/hot?page=2">次へ</a>
+	</div>
+<div class="ad_rectangle">
+<script type="text/javascript">
+   document.write(dfpads[is336 ? "tg_ipn_middle_336" : "tg_ipn_middle"]);
+</script><script async="" src="./注目のまとめ - Togetterまとめ_files/adsbygoogle.js.ダウンロード"></script>
+<!-- tg_ipn_middle_336 -->
+<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-1379083136098030" data-ad-slot="9258737502" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><iframe width="336" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;" src="./注目のまとめ - Togetterまとめ_files/saved_resource.html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+		<div class="side_box side_line_box real_time_ranking">
+			<h3 class="title prefix"><i class="fa fa-line-chart"></i><span>リアルタイムランキング</span><span class="ranking_date">28分27秒前更新</span></h3>
+				<div class="main_box closed">
+					<ul>
+									<li>
+				<a href="http://togetter.com/li/1033016" title="【これは悲しい…】客「爬虫類や虫を触っている人が働いてるコンビニなんて考えられない。行きたくなくなるから辞めさせろ。」店員「衛生管理は徹底してます」→結果は…" data-ga="inbound_realtimerank">
+					<div class="ranking-box rank-1 top-three">
+						<div class="ranking-tag"><span class="fa fa-bookmark"></span><span class="rank-number">1</span></div>
+						<div class="ranking-state state-2">
+							<div class="state-box">
+								<span class="fa fa-arrow-up"></span>
+								<span class="state-text">UP</span>
+							</div>
+						</div>
+						<div class="content">
+							<span>【これは悲しい…】客「爬虫類や虫を触っている人が働いてるコンビニなんて考えられない。行きたくなくなるから辞めさせろ。..</span>
+                            						</div>
+					</div>
+				</a>
+			</li>
+						<li>
+				<a href="http://togetter.com/li/1032577" title="ソフトバンクの「かざして募金」返金無理から一転、全額返金へ" data-ga="inbound_realtimerank">
+					<div class="ranking-box rank-2 top-three">
+						<div class="ranking-tag"><span class="fa fa-bookmark"></span><span class="rank-number">2</span></div>
+						<div class="ranking-state state-2">
+							<div class="state-box">
+								<span class="fa fa-arrow-up"></span>
+								<span class="state-text">UP</span>
+							</div>
+						</div>
+						<div class="content">
+							<span>ソフトバンクの「かざして募金」返金無理から一転、全額返金へ</span>
+                                                            <img data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/CpKsvSZUMAAw3V-.jpg-thumb" onerror="errorImg(this);">
+                            						</div>
+					</div>
+				</a>
+			</li>
+						<li>
+				<a href="http://togetter.com/li/1032776" title="仙台・ホテル瑞鳳の食べ放題、これまでの人生の内でほかを寄せ付けないブッチギリの優勝であった" data-ga="inbound_realtimerank">
+					<div class="ranking-box rank-3 top-three">
+						<div class="ranking-tag"><span class="fa fa-bookmark"></span><span class="rank-number">3</span></div>
+						<div class="ranking-state state-2">
+							<div class="state-box">
+								<span class="fa fa-arrow-up"></span>
+								<span class="state-text">UP</span>
+							</div>
+						</div>
+						<div class="content">
+							<span>仙台・ホテル瑞鳳の食べ放題、これまでの人生の内でほかを寄せ付けないブッチギリの優勝であった</span>
+                                                            <img data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/Ctw6-yfVYAAi0_7.jpg-thumb" onerror="errorImg(this);">
+                            						</div>
+					</div>
+				</a>
+			</li>
+						<li>
+				<a href="http://togetter.com/li/929525" title="●同人サークルと同人誌に対価があることの成り立ちと歴史の話" data-ga="inbound_realtimerank">
+					<div class="ranking-box rank-4">
+						<div class="ranking-tag"><span class="rank-number">4</span></div>
+						<div class="ranking-state state-0">
+							<div class="state-box">
+								<span class="fa fa-arrow-down"></span>
+								<span class="state-text">DOWN</span>
+							</div>
+						</div>
+						<div class="content">
+							<span>●同人サークルと同人誌に対価があることの成り立ちと歴史の話</span>
+                            						</div>
+					</div>
+				</a>
+			</li>
+						<li>
+				<a href="http://togetter.com/li/1033058" title="ジャパンミート（肉のハナマサ）の株主優待が着々と届き始め、株主の冷凍庫を逼迫させているもよう" data-ga="inbound_realtimerank">
+					<div class="ranking-box rank-5">
+						<div class="ranking-tag"><span class="rank-number">5</span></div>
+						<div class="ranking-state state-2">
+							<div class="state-box">
+								<span class="fa fa-arrow-up"></span>
+								<span class="state-text">UP</span>
+							</div>
+						</div>
+						<div class="content">
+							<span>ジャパンミート（肉のハナマサ）の株主優待が着々と届き始め、株主の冷凍庫を逼迫させているもよう</span>
+                            						</div>
+					</div>
+				</a>
+			</li>
+						<li>
+				<a href="http://togetter.com/li/1033025" title="「若いうちに本を読んでおいた方が良い」様々な理由があるがその中で最も大人たちを納得させたものとは" data-ga="inbound_realtimerank">
+					<div class="ranking-box rank-6">
+						<div class="ranking-tag"><span class="rank-number">6</span></div>
+						<div class="ranking-state state-0">
+							<div class="state-box">
+								<span class="fa fa-arrow-down"></span>
+								<span class="state-text">DOWN</span>
+							</div>
+						</div>
+						<div class="content">
+							<span>「若いうちに本を読んでおいた方が良い」様々な理由があるがその中で最も大人たちを納得させたものとは</span>
+                            						</div>
+					</div>
+				</a>
+			</li>
+						<li>
+				<a href="http://togetter.com/li/1033113" title="とあるデザイナーさんが髪の毛をピンク色に染めた理由にデザイナーと営業職の本音が垣間見える" data-ga="inbound_realtimerank">
+					<div class="ranking-box rank-7">
+						<div class="ranking-tag"><span class="rank-number">7</span></div>
+						<div class="ranking-state state-2">
+							<div class="state-box">
+								<span class="fa fa-arrow-up"></span>
+								<span class="state-text">UP</span>
+							</div>
+						</div>
+						<div class="content">
+							<span>とあるデザイナーさんが髪の毛をピンク色に染めた理由にデザイナーと営業職の本音が垣間見える</span>
+                            						</div>
+					</div>
+				</a>
+			</li>
+						<li>
+				<a href="http://togetter.com/li/1032219" title="「モンストやるなよ」のCMが意味不明…しかし理由を知ると逆に背中を押されてしまう" data-ga="inbound_realtimerank">
+					<div class="ranking-box rank-8">
+						<div class="ranking-tag"><span class="rank-number">8</span></div>
+						<div class="ranking-state state-2">
+							<div class="state-box">
+								<span class="fa fa-arrow-up"></span>
+								<span class="state-text">UP</span>
+							</div>
+						</div>
+						<div class="content">
+							<span>「モンストやるなよ」のCMが意味不明…しかし理由を知ると逆に背中を押されてしまう</span>
+                            						</div>
+					</div>
+				</a>
+			</li>
+						<li>
+				<a href="http://togetter.com/li/1033099" title="北大混浴同好会　わずか１週間ほどで活動停止" data-ga="inbound_realtimerank">
+					<div class="ranking-box rank-9">
+						<div class="ranking-tag"><span class="rank-number">9</span></div>
+						<div class="ranking-state state-0">
+							<div class="state-box">
+								<span class="fa fa-arrow-down"></span>
+								<span class="state-text">DOWN</span>
+							</div>
+						</div>
+						<div class="content">
+							<span>北大混浴同好会　わずか１週間ほどで活動停止</span>
+                            						</div>
+					</div>
+				</a>
+			</li>
+						<li>
+				<a href="http://togetter.com/li/1033046" title="「サイトに表示される広告でスクロールとともに動くヤツがうざい」に同意の声が多数" data-ga="inbound_realtimerank">
+					<div class="ranking-box rank-10">
+						<div class="ranking-tag"><span class="rank-number">10</span></div>
+						<div class="ranking-state state-2">
+							<div class="state-box">
+								<span class="fa fa-arrow-up"></span>
+								<span class="state-text">UP</span>
+							</div>
+						</div>
+						<div class="content">
+							<span>「サイトに表示される広告でスクロールとともに動くヤツがうざい」に同意の声が多数</span>
+                            						</div>
+					</div>
+				</a>
+			</li>
+						<li>
+				<a href="http://togetter.com/li/1032983" title="「東日本大震災で妊産婦らが病院をたらい回し…」という記事に、仙台の産科医・室月淳氏が異議。そのやり取り。" data-ga="inbound_realtimerank">
+					<div class="ranking-box rank-11">
+						<div class="ranking-tag"><span class="rank-number">11</span></div>
+						<div class="ranking-state state-0">
+							<div class="state-box">
+								<span class="fa fa-arrow-down"></span>
+								<span class="state-text">DOWN</span>
+							</div>
+						</div>
+						<div class="content">
+							<span>「東日本大震災で妊産婦らが病院をたらい回し…」という記事に、仙台の産科医・室月淳氏が異議。そのやり取り。</span>
+                            						</div>
+					</div>
+				</a>
+			</li>
+						<li>
+				<a href="http://togetter.com/li/1032876" title="スーパーにサメが入荷「ど～も、さめです」←このPOP書いたやつ出てこい" data-ga="inbound_realtimerank">
+					<div class="ranking-box rank-12">
+						<div class="ranking-tag"><span class="rank-number">12</span></div>
+						<div class="ranking-state state-3">
+							<div class="state-box">
+								<span class="fa fa-star"></span>
+								<span class="state-text">NEW</span>
+							</div>
+						</div>
+						<div class="content">
+							<span>スーパーにサメが入荷「ど～も、さめです」←このPOP書いたやつ出てこい</span>
+                            						</div>
+					</div>
+				</a>
+			</li>
+								</ul>
+					<div class="read-more">
+						<a class="btn" data-ga="action_realtimerankmore">ランキングの続きを見る</a>
+					</div>
+							<div class="app-dl">
+						<a class="btn primary" href="https://itunes.apple.com/jp/app/togetter/id387151129?mt=8" data-ga="action_realtimerank-download">11〜20位は公式アプリで限定配信中</a>
+					</div>
+				</div>
+		</div>
+		<script>
+			new RealtimeRanking({
+				selector: '.side_box.real_time_ranking .ranking_date',
+				time: 1475673014657 ,
+				label: '分,秒前更新'
+			});
+		</script>
+		<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk/xfbml.ad.js#xfbml=1&version=v2.5&appId=121386947952778";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+<div id="facebook_ad" class="facebook_ad rendered" data-ad-id="tg_ipn_middle" data-filter="" style="display: block;">
+  <fb:ad placementid="121386947952778_1072188766205920" format="native" nativeadid="facebook_ad" testmode="false" class="fb-adnw fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=121386947952778&amp;container_width=0&amp;features=%7B%22ua%22%3A%22Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F53.0.2785.143%20Safari%2F537.36%22%2C%22css_all%22%3Atrue%2C%22cfq%22%3Atrue%2C%22cssvar%22%3Atrue%2C%22scope%22%3Afalse%2C%22sticky%22%3Afalse%2C%22scroll%22%3Afalse%2C%22plugins%22%3A5%2C%22pmode%22%3Afalse%2C%22colorDepth%22%3A24%2C%22websql%22%3Atrue%2C%22dnd%22%3Atrue%2C%22ce%22%3Atrue%2C%22imp%22%3Atrue%2C%22tz%22%3A-540%2C%22ogg%22%3Atrue%2C%22dialog%22%3Atrue%2C%22video%22%3Atrue%2C%22audio%22%3Atrue%2C%22chrome%22%3Atrue%2C%22chromewebstore%22%3Atrue%2C%22random%22%3Atrue%2C%22ie%22%3Atrue%2C%22userdata%22%3Atrue%2C%22srcset%22%3Atrue%2C%22canvas%22%3Atrue%2C%22pic%22%3Atrue%2C%22wc%22%3Atrue%2C%22ext%22%3Afalse%2C%22devorient%22%3Atrue%2C%22devmotion%22%3Atrue%2C%22time%22%3A8.390000000000782%7D&amp;format=native&amp;iframe=NO_IFRAME&amp;iframeurls=%5B%5D&amp;locale=en_US&amp;mediation=NONE&amp;pixelratio=1&amp;placementid=121386947952778_1072188766205920&amp;screenheight=768&amp;screenwidth=1366&amp;sdk=joey&amp;tagname=FB%3AAD&amp;testmode=false&amp;topdomain=togetter.com&amp;topurl=http%3A%2F%2Ftogetter.com%2Fhot" style="display: none;"><span style="vertical-align: bottom; width: 0px; height: 0px;"><iframe name="f5c504f483be24" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:ad Facebook Social Plugin" src="./注目のまとめ - Togetterまとめ_files/ad.html" class="" style="border: none; visibility: visible; width: 0px; height: 0px;"></iframe></span></fb:ad>
+  <a class="fbAdLink clearfix">
+    <div class="fbAdMedia" style="height: 170px;">
+      <div class="fbAdCallToAction">リンクを開く</div>
+	  <span class="rad_btn pr_btn" title="PR">PR</span>
+    <img src="./注目のまとめ - Togetterまとめ_files/safe_image.php" style="height: 100%; width: 100%;"></div>
+    <div class="fbAdTitle">運動をせずに腹筋を割る方法が『1日1回だけで良い』と話題に</div>
+    <div class="fbAdBody">50過ぎてもイケるなら俺でも大丈夫だな！</div>
+  </a>
+<div style="background-color: rgb(0, 0, 0); border-bottom-right-radius: 8px; left: 0px; line-height: 12px; padding: 2px; position: absolute; top: 0px;"><a href="https://m.facebook.com/ads/ad_choices/?ad_token=AI%405b10222df3dec120a7ca8df26758604b" target="_blank" style="color: rgb(204, 204, 204); display: inline-block; font-size: 10px; height: 10px; line-height: 10px; overflow: hidden; left: 0px; padding-left: 0px; text-decoration: none; top: 0px; transition: 0.3s; vertical-align: middle; visibility: hidden; width: 1px;">AdChoices</a><img src="./注目のまとめ - Togetterまとめ_files/-oNSZayf7QK.png" style="background-color: rgb(0, 0, 0); height: 12px; vertical-align: bottom; width: 12px;"></div></div>
+<div class="side_box side_line_box side_comment_box list_recommend">
+	<h3 class="title prefix"><i class="fa fa-star"></i><a href="http://togetter.com/recentpopular">オススメまとめ</a></h3>
+	<div class="main_box">
+		<ul class="lists">
+			<li class="clearfix">
+				<a href="http://togetter.com/li/1032577" title="ソフトバンクの「かざして募金」返金無理から一転、全額返金へ" data-ga="inbound_siderecommend">
+					<p>ソフトバンクの「かざして募金」返金無理から一転、全額返金へ</p>
+					            <span class="point">7192pt</span>
+            <span class="cssline icon_new">New</span>					<img class="icon_24 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/378800000453316822/3faa250431dc23daf4ceef28ee49a558_normal.jpeg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="http://togetter.com/li/1030322" title="東京までの交通費を基準に作り直した日本地図が完成→「秋田遠すぎて狂ってる」「長崎は遠かった」" data-ga="inbound_siderecommend_1">
+					<p>東京までの交通費を基準に作り直した日本地図が完成→「秋田遠すぎて狂ってる」「長崎は遠かった」</p>
+					            <span class="point">8714pt</span>
+            					<img class="icon_24 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/781548714393374720/83luF2vr_normal.jpg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="http://togetter.com/li/1031099" title="交通事故の被害者になってしまったら。" data-ga="inbound_siderecommend_2">
+					<p>交通事故の被害者になってしまったら。</p>
+					            <span class="point">3295pt</span>
+            					<img class="icon_24 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/688743243438112768/gTrRuTN7_normal.jpg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="http://togetter.com/li/1031964" title="なぜこんなことが？ ディズニーオフィシャルアーティストの作品がpixivに発表したファンアートに似すぎている" data-ga="inbound_siderecommend_3">
+					<p>なぜこんなことが？ ディズニーオフィシャルアーティストの作品がpixivに発表したファンアートに似すぎている</p>
+					            <span class="point">1335pt</span>
+            					<img class="icon_24 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/548098970426159104/p1AnAdR0_normal.jpeg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="http://togetter.com/li/1032297" title="昭和５０年頃をイメージしたとして描かれたカップラーメンのパッケージに総ツッコミのTL「昭和＝大昔みたいな平成生まれの論理やめろ」" data-ga="inbound_siderecommend_4">
+					<p>昭和５０年頃をイメージしたとして描かれたカップラーメンのパッケージに総ツッコミのTL「昭和＝大昔みたいな平成生まれの..</p>
+					            <span class="point">1434pt</span>
+            					<img class="icon_24 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/583614036991873024/tAS_HObL_normal.jpg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="http://togetter.com/li/1033016" title="【これは悲しい…】客「爬虫類や虫を触っている人が働いてるコンビニなんて考えられない。行きたくなくなるから辞めさせろ。」店員「衛生管理は徹底してます」→結果は…" data-ga="inbound_siderecommend_5">
+					<p>【これは悲しい…】客「爬虫類や虫を触っている人が働いてるコンビニなんて考えられない。行きたくなくなるから辞めさせろ。..</p>
+					            <span class="point">1863pt</span>
+            <span class="cssline icon_new">New</span>					<img class="icon_24 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/633054815455604736/FLufb73v_normal.jpg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="thumb_list_box">	<div class="title_simple_box">
+		<h3>注目のまとめ</h3>
+	</div>
+	<div id="simple_list_box_1667055858" class="carousel">
+		<div style="transform: translate3d(0px, 0px, 0px); width: 900px;">
+		<div class="simple_list_box">
+			<ul class="simple_list thumb_list clearfix">
+<li class="clearfix">
+	<a href="http://togetter.com/li/1033042" data-ga="inbound_thumblistitem-bottom_1033042">
+		<div class="thumb">
+			<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/Ct1Y2xKUMAAerom.jpg:thumb" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/placeholder150.png">
+            <span class="point">42pt</span>
+            			<span class="category_label">科学</span>
+		</div>
+		<div class="title">
+			<h3 title="大隅先生の弟子、水島先生の「トリコ」への衝撃 「Natureよりも読者数が多い“超”有名ジャーナル『週刊少年ジャンプ』で、オートファジーの解説が！」">大隅先生の弟子、水島先生の「トリコ」への衝撃 「Natu..</h3>
+			<div class="content">
+				<img class="icon_20 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/548098970426159104/p1AnAdR0_normal.jpeg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				<span class="view_str"><span>3757</span> view</span>
+			</div>
+		</div>
+	</a>
+</li>
+<li class="clearfix">
+	<a href="http://togetter.com/li/1033113" data-ga="inbound_thumblistitem-bottom_1033113">
+		<div class="thumb">
+			<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pimg.togetter.com/e434a77f3c94fa07b3e88b9ab4fb3a032bad5bd9/687474703a2f2f696e7374616772616d2e636f6d2f702f424c4942374949444665482f6d656469612f3f73697a653d6c?w=320&amp;t=c" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/placeholder150.png">
+            <span class="point">76pt</span>
+            			<span class="category_label">雑談</span>
+		</div>
+		<div class="title">
+			<h3 title="とあるデザイナーさんが髪の毛をピンク色に染めた理由にデザイナーと営業職の本音が垣間見える">とあるデザイナーさんが髪の毛をピンク色に染めた理由にデザ..</h3>
+			<div class="content">
+				<img class="icon_20 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/739476356388376577/6ZuWZ6sL_normal.jpg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				<span class="view_str"><span>9559</span> view</span>
+			</div>
+		</div>
+	</a>
+</li>
+<li class="clearfix">
+	<a href="http://togetter.com/li/1033058" data-ga="inbound_thumblistitem-bottom_1033058">
+		<div class="thumb">
+			<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/Ct9iS9ZVUAAggyU.jpg:thumb" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/placeholder150.png">
+            <span class="point">163pt</span>
+            			<span class="category_label">料理</span>
+		</div>
+		<div class="title">
+			<h3 title="ジャパンミート（肉のハナマサ）の株主優待が着々と届き始め、株主の冷凍庫を逼迫させているもよう">ジャパンミート（肉のハナマサ）の株主優待が着々と届き始め..</h3>
+			<div class="content">
+				<img class="icon_20 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/540334483342229504/NNo5YckA_normal.jpeg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				<span class="view_str"><span>11184</span> view</span>
+			</div>
+		</div>
+	</a>
+</li>
+			</ul>
+		</div>
+		<div class="simple_list_box">
+			<ul class="simple_list thumb_list clearfix">
+<li class="clearfix">
+	<a href="http://togetter.com/li/1032776" data-ga="inbound_thumblistitem-bottom_1032776">
+		<div class="thumb">
+			<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/Ctw6-yfVYAAi0_7.jpg:thumb" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/placeholder150.png">
+            <span class="point">1617pt</span>
+            			<span class="category_label">グルメ</span>
+		</div>
+		<div class="title">
+			<h3 title="仙台・ホテル瑞鳳の食べ放題、これまでの人生の内でほかを寄せ付けないブッチギリの優勝であった">仙台・ホテル瑞鳳の食べ放題、これまでの人生の内でほかを寄..</h3>
+			<div class="content">
+				<img class="icon_20 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/540334483342229504/NNo5YckA_normal.jpeg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				<span class="view_str"><span>43212</span> view</span>
+			</div>
+		</div>
+	</a>
+</li>
+<li class="clearfix">
+	<a href="http://togetter.com/li/1033156" data-ga="inbound_thumblistitem-bottom_1033156">
+		<div class="thumb">
+			<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/Ct03vIuUIAAjLfA.jpg:thumb" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/placeholder150.png">
+            <span class="point">28pt</span>
+            			<span class="category_label">演劇</span>
+		</div>
+		<div class="title">
+			<h3 title="8日(土)『嵐になるまで待って』会場「春日井市民会館」への名古屋からの行き方早わかり!!">8日(土)『嵐になるまで待って』会場「春日井市民会館」へ..</h3>
+			<div class="content">
+				<img class="icon_20 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/378800000626808186/b1ad353e155704926620b42c54c06e32_normal.jpeg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				<span class="view_str"><span>305</span> view</span>
+			</div>
+		</div>
+	</a>
+</li>
+<li class="clearfix">
+	<a href="http://togetter.com/li/1033046" data-ga="inbound_thumblistitem-bottom_1033046">
+		<div class="thumb">
+			<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/Ct9UXG8VMAAnBlf.jpg:thumb" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/placeholder150.png">
+            <span class="point">130pt</span>
+            			<span class="category_label">インターネット</span>
+		</div>
+		<div class="title">
+			<h3 title="「サイトに表示される広告でスクロールとともに動くヤツがうざい」に同意の声が多数">「サイトに表示される広告でスクロールとともに動くヤツがう..</h3>
+			<div class="content">
+				<img class="icon_20 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/578399490228416512/6OC2XIAy_normal.jpeg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				<span class="view_str"><span>10203</span> view</span>
+			</div>
+		</div>
+	</a>
+</li>
+			</ul>
+		</div>
+		<div class="simple_list_box">
+			<ul class="simple_list thumb_list clearfix">
+<li class="clearfix">
+	<a href="http://togetter.com/li/1032219" data-ga="inbound_thumblistitem-bottom_1032219">
+		<div class="thumb">
+			<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/CtzA9lOUAAARJvC.jpg:thumb" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/placeholder150.png">
+            <span class="point">90pt</span>
+            			<span class="category_label">PR</span>
+		</div>
+		<div class="title">
+			<h3 title="「モンストやるなよ」のCMが意味不明…しかし理由を知ると逆に背中を押されてしまう">「モンストやるなよ」のCMが意味不明…しかし理由を知ると..</h3>
+			<div class="content">
+				<img class="icon_20 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/660024395314761728/yuC9ueR8_normal.png" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				<span class="view_str"><span>28448</span> view</span>
+			</div>
+		</div>
+	</a>
+</li>
+<li class="clearfix">
+	<a href="http://togetter.com/li/1032983" data-ga="inbound_thumblistitem-bottom_1032983">
+		<div class="thumb">
+			<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/Ct7Z7D9VUAAgkAI.jpg:thumb" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/placeholder150.png">
+            <span class="point">787pt</span>
+            			<span class="category_label">社会問題</span>
+		</div>
+		<div class="title">
+			<h3 title="「東日本大震災で妊産婦らが病院をたらい回し…」という記事に、仙台の産科医・室月淳氏が異議。そのやり取り。">「東日本大震災で妊産婦らが病院をたらい回し…」という記事..</h3>
+			<div class="content">
+				<img class="icon_20 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/607325394560126976/Bv5trP3t_normal.jpg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				<span class="view_str"><span>22568</span> view</span>
+			</div>
+		</div>
+	</a>
+</li>
+<li class="clearfix">
+	<a href="http://togetter.com/li/1033123" data-ga="inbound_thumblistitem-bottom_1033123">
+		<div class="thumb">
+			<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pimg.togetter.com/a60cc35f612f49668d9ebacacf40881bb3b4871a/687474703a2f2f7062732e7477696d672e636f6d2f74776565745f766964656f5f7468756d622f43743358765530576741413352396b2e6a7067?w=320&amp;t=c" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/placeholder150.png">
+            <span class="point">81pt</span>
+            			<span class="category_label">インターネット</span>
+		</div>
+		<div class="title">
+			<h3 title="【爆笑注意】「サーバー管理者 VS DDos攻撃」とはどんな戦いであるのかがよく分かる映像が秀逸！">【爆笑注意】「サーバー管理者 VS DDos攻撃」とはど..</h3>
+			<div class="content">
+				<img class="icon_20 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/583614036991873024/tAS_HObL_normal.jpg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				<span class="view_str"><span>3882</span> view</span>
+			</div>
+		</div>
+	</a>
+</li>
+			</ul>
+		</div>
+		</div>
+	</div>
+<script type="text/javascript">
+new CarouselBox("simple_list_box_1667055858");
+</script>
+</div><div class="ad_rectangle">
+<script type="text/javascript">
+   document.write(dfpads[is336 ? "tg_ipn_bottom_336" : "tg_ipn_bottom"]);
+</script><script async="" src="./注目のまとめ - Togetterまとめ_files/adsbygoogle.js.ダウンロード"></script>
+<!-- tg_ipn_bottom_336 -->
+<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-1379083136098030" data-ad-slot="7782004309" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><ins id="aswift_1_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><iframe width="336" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;" src="./注目のまとめ - Togetterまとめ_files/saved_resource(1).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="side_box side_line_box side_account_box">
+	<h3><a href="http://togetter.com/accounts/hot" data-ga="inbound_account_side">人気のチャンネル</a></h3>
+		<div class="main_box">
+		<ul>
+			<li class="side_account_item clearfix">
+				<a href="http://togetter.com/accounts/whqTChh" title="ゆる〜く国内情報をお伝え！？　官公庁のアカウント" data-ga="inbound_account_item">
+					<span class="link">ゆる〜く国内情報をお伝え！？　官公庁のアカウント<span class="cssline icon_up">Up</span></span>
+					<span><span class="count">7</span></span>
+					<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/Ct5RNLVVUAARJuP.jpg:thumb" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				</a>
+			</li>
+			<li class="side_account_item clearfix">
+				<a href="http://togetter.com/accounts/g6ovK6r" title="夏だ！夏フェスに行こう！2016夏フェス公式アカウント" data-ga="inbound_account_item">
+					<span class="link">夏だ！夏フェスに行こう！2016夏フェス公式アカウント<span class="cssline icon_up">Up</span></span>
+					<span><span class="count">18</span></span>
+					<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/Ct1NzfUUsAAsWpq.jpg:thumb" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				</a>
+			</li>
+			<li class="side_account_item clearfix">
+				<a href="http://togetter.com/accounts/rlqNEyh" title="美の巨匠から現代アートまで！美術館のアカウント" data-ga="inbound_account_item">
+					<span class="link">美の巨匠から現代アートまで！美術館のアカウント<span class="cssline icon_up">Up</span></span>
+					<span><span class="count">19</span></span>
+					<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/CtxhU5XUIAADDkv.jpg:thumb" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				</a>
+			</li>
+			<li class="side_account_item clearfix">
+				<a href="http://togetter.com/accounts/iiQxPgG" title="通勤も可愛い服で行きたい！オフィスに着ていけるアパレルブランドまとめ" data-ga="inbound_account_item">
+					<span class="link">通勤も可愛い服で行きたい！オフィスに着ていけるアパレルブランドまとめ</span>
+					<span><span class="count">28</span></span>
+					<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/Ctm843SWAAAc0SA.jpg:thumb" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				</a>
+			</li>
+			<li class="side_account_item clearfix">
+				<a href="http://togetter.com/accounts/zOBqzdU" title="曲げわっぱのお弁当を作る人々＃わっぱ弁当" data-ga="inbound_account_item">
+					<span class="link">曲げわっぱのお弁当を作る人々＃わっぱ弁当<span class="cssline icon_up">Up</span></span>
+					<span><span class="count">4</span></span>
+					<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/CtkloVgVYAABekV.jpg:thumb" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				</a>
+			</li>
+			<li class="button clearfix">
+				<a class="btn" href="http://togetter.com/accounts/hot" data-ga="inbound_account_sidemore">チャンネルをもっとみる</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<script type="text/javascript">
+$(".side_account_box p:first-child").ellipsis();
+</script>
+			<div class="side_box side_line_box side_comment_box editor_recommend">
+				<h3 class="title prefix"><i class="fa fa-thumbs-up"></i>トゥギャトピ！<br><span>編集部がオススメまとめをピックアップしてお届け中</span></h3>
+				<span>19時17分更新</span>
+				<div class="main_box ">
+		<ul>
+			<li class="clearfix">
+				<a href="http://togetter.com/li/1032657" title="【個人見解】メンヘラでも人畜無害なひとたちだっているんだよ、という簡単なお話。" data-ga="inbound_editorrecommend_1032657">
+					<p><span>「メンヘラ」って勝手に決めつけないで</span><span class="cssline icon_new">New</span></p>
+					<p class="desc">精神疾患者に対する正しい認識と向き合い方</p>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="http://togetter.com/li/1033081" title="診察室のホワイジャパニーズピーポー" data-ga="inbound_editorrecommend_1033081">
+					<p><span>ここが変だよ日本人【診察室編】</span><span class="cssline icon_new">New</span></p>
+					<p class="desc">そんな理由で救急車を呼ぶな！</p>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="http://togetter.com/li/1032855" title="【画像あり】100均で買えるスマートフォン用レンズが凄い！" data-ga="inbound_editorrecommend_1032855">
+					<p><span>100均で買える広角・マクロレンズ</span><span class="cssline icon_new">New</span></p>
+					<p class="desc">スマホでも接写ができる便利グッズと評判に</p>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="http://togetter.com/li/1033077" title="なぜ国会質問が（答弁を作る）官僚に渡るのは深夜になってしまうのか" data-ga="inbound_editorrecommend_1033077">
+					<p><span>22時「明日までに資料」と頼まれる霞が関</span><span class="cssline icon_new">New</span></p>
+					<p class="desc">国会答弁が官僚に渡るのは深夜！省庁のブラックな事情</p>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="http://togetter.com/li/1032933" title="#飯テロイラスト部 活動集" data-ga="inbound_editorrecommend_1032933">
+					<p><span>本物よりも美味しそう？＃飯テロイラスト部</span><span class="cssline icon_new">New</span></p>
+					<p class="desc">空腹時および深夜の閲覧はお控えください</p>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="http://togetter.com/li/1032886" title="福岡空港　第一旅客ターミナル　最後の日" data-ga="inbound_editorrecommend_1032886">
+					<p><span>47年ありがとう 福岡空港第1ターミナル</span><span class="cssline icon_new">New</span></p>
+					<p class="desc">トロな内観やレストランとの別れを悲しむ声</p>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="http://togetter.com/li/1032392" title="カズヤ間違い探し" data-ga="inbound_editorrecommend_1032392">
+					<p><span>お下劣マンガの修正箇所を探せ！</span><span class="cssline icon_new">New</span></p>
+					<p class="desc">アウトだった箇所が修正された？未修正の箇所もヤバい</p>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="http://togetter.com/li/1032368" title="ガーナボランティアハイライト" data-ga="inbound_editorrecommend_1032368">
+					<p><span>ガーナで教育ボランティアをした1ヶ月</span><span class="cssline icon_new">New</span></p>
+					<p class="desc">子どもたちとの交流やガーナでの生活について</p>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="http://togetter.com/li/1032677" title="自販機でしか見れないファンタ" data-ga="inbound_editorrecommend_1032677">
+					<p><span>公式サイトにも載ってない謎のファンタ</span><span class="cssline icon_new">New</span></p>
+					<p class="desc">自販機でしか買えない「白桃」味が美味しそう</p>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="http://togetter.com/li/1032668" title="「一緒にしんで」ってどういうこと? #愛知県民がグッと来る言葉 に反応する知多娘。と愛知県民" data-ga="inbound_editorrecommend_1032668">
+					<p><span>何個わかる？ #愛知県民がグッと来る言葉</span><span class="cssline icon_new">New</span></p>
+					<p class="desc">「一緒にしんで」と言われても愛知の人なら平気</p>
+				</a>
+			</li>
+		</ul>
+				</div>
+			</div>
+<script type="text/javascript">
+$(".editor_recommend p:first-child").ellipsis();
+
+</script>
+			<div class="thumb_list_box">	<div class="list_title_box">
+			<h2 title="まとめマイスター">まとめマイスター</h2>
+		</div>
+	<div id="simple_list_box_618502123" class="carousel">
+		<div style="transform: translate3d(0px, 0px, 0px); width: 900px;">
+		<div class="simple_list_box">
+			<ul class="simple_list thumb_list clearfix">
+<li class="clearfix">
+	<a href="http://togetter.com/li/1033237" data-ga="inbound_thumblistitem-bottom_1033237">
+		<div class="thumb">
+			<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/CtyGn-tWIAAFgkK.jpg:thumb" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/placeholder150.png">
+            <span class="point">1pt</span>
+            			<span class="category_label">サッカー</span>
+		</div>
+		<div class="title">
+			<h3 title="オクトーバーフェストを楽しむバイエルン・ミュンヘンの選手＆監督まとめ【ビールの祭典】  #Oktoberfest">オクトーバーフェストを楽しむバイエルン・ミュンヘンの選手..</h3>
+			<div class="content">
+				<img class="icon_20 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/480464045435150336/F8Lo4V1h_normal.jpeg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				<span class="view_str"><span>66</span> view</span>
+			</div>
+		</div>
+	</a>
+</li>
+<li class="clearfix">
+	<a href="http://togetter.com/li/1033254" data-ga="inbound_thumblistitem-bottom_1033254">
+		<div class="thumb">
+			<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/Ct1WxY_UMAAUzSP.jpg:thumb" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/placeholder150.png">
+			<span class="category_label">マンガ</span>
+		</div>
+		<div class="title">
+			<h3 title="ｗｊ４４　２０１６　たくあんとバツの日常閻魔帳（最終回）＆　磯部磯兵衛">ｗｊ４４　２０１６　たくあんとバツの日常閻魔帳（最終回）..</h3>
+			<div class="content">
+				<img class="icon_20 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/749530505540841472/oMxyq8n7_normal.jpg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				<span class="view_str"><span>49</span> view</span>
+			</div>
+		</div>
+	</a>
+</li>
+<li class="clearfix">
+	<a href="http://togetter.com/li/1033238" data-ga="inbound_thumblistitem-bottom_1033238">
+		<div class="thumb">
+			<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/Ct2CfJ6VYAACUSU.jpg:thumb" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/placeholder150.png">
+			<span class="category_label">マンガ</span>
+		</div>
+		<div class="title">
+			<h3 title="ｗｊ４４　２０１６　銀魂＆金未来杯　バラバルジュラ">ｗｊ４４　２０１６　銀魂＆金未来杯　バラバルジュラ</h3>
+			<div class="content">
+				<img class="icon_20 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/749530505540841472/oMxyq8n7_normal.jpg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				<span class="view_str"><span>50</span> view</span>
+			</div>
+		</div>
+	</a>
+</li>
+			</ul>
+		</div>
+		<div class="simple_list_box">
+			<ul class="simple_list thumb_list clearfix">
+<li class="clearfix">
+	<a href="http://togetter.com/li/1033114" data-ga="inbound_thumblistitem-bottom_1033114">
+		<div class="thumb">
+			<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/CtMtbzsVIAAdIx0.jpg:thumb" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/placeholder150.png">
+            <span class="point">6pt</span>
+            			<span class="category_label">歴史</span>
+		</div>
+		<div class="title">
+			<h3 title="【番外】真田昌幸で見る日本史【真田昌幸は永久に不滅です】">【番外】真田昌幸で見る日本史【真田昌幸は永久に不滅です】</h3>
+			<div class="content">
+				<img class="icon_20 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/607944630643007489/0gXb4M2p_normal.jpg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				<span class="view_str"><span>526</span> view</span>
+			</div>
+		</div>
+	</a>
+</li>
+<li class="clearfix">
+	<a href="http://togetter.com/li/1033232" data-ga="inbound_thumblistitem-bottom_1033232">
+		<div class="thumb">
+			<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/Ct1efhuUAAIILu_.jpg:thumb" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/placeholder150.png">
+			<span class="category_label">マンガ</span>
+		</div>
+		<div class="title">
+			<h3 title="ｗｊ４４　2016　左門くんはサモナー＆約束のネバーランド">ｗｊ４４　2016　左門くんはサモナー＆約束のネバーランド</h3>
+			<div class="content">
+				<img class="icon_20 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/749530505540841472/oMxyq8n7_normal.jpg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				<span class="view_str"><span>95</span> view</span>
+			</div>
+		</div>
+	</a>
+</li>
+<li class="clearfix">
+	<a href="http://togetter.com/li/1033229" data-ga="inbound_thumblistitem-bottom_1033229">
+		<div class="thumb">
+			<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/Cty64-pVUAAlaZN.jpg:thumb" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/placeholder150.png">
+			<span class="category_label">マンガ</span>
+		</div>
+		<div class="title">
+			<h3 title="ｗｊ４４　2016　ワンピース＆みんなのこち亀">ｗｊ４４　2016　ワンピース＆みんなのこち亀</h3>
+			<div class="content">
+				<img class="icon_20 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/749530505540841472/oMxyq8n7_normal.jpg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				<span class="view_str"><span>110</span> view</span>
+			</div>
+		</div>
+	</a>
+</li>
+			</ul>
+		</div>
+		<div class="simple_list_box">
+			<ul class="simple_list thumb_list clearfix">
+<li class="clearfix">
+	<a href="http://togetter.com/li/1033247" data-ga="inbound_thumblistitem-bottom_1033247">
+		<div class="thumb">
+			<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/Ct2BHo4UsAA5Y0D.jpg:thumb" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/placeholder150.png">
+			<span class="category_label">マンガ</span>
+		</div>
+		<div class="title">
+			<h3 title="ｗｊ４４　２０１６　ラブラッシュ　＆　火ノ丸相撲">ｗｊ４４　２０１６　ラブラッシュ　＆　火ノ丸相撲</h3>
+			<div class="content">
+				<img class="icon_20 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/749530505540841472/oMxyq8n7_normal.jpg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				<span class="view_str"><span>58</span> view</span>
+			</div>
+		</div>
+	</a>
+</li>
+<li class="clearfix">
+	<a href="http://togetter.com/li/1033268" data-ga="inbound_thumblistitem-bottom_1033268">
+		<div class="thumb">
+			<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/Ct7ai8RVUAAf4YF.jpg:thumb" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/placeholder150.png">
+			<span class="category_label">サッカー</span>
+		</div>
+		<div class="title">
+			<h3 title="ワールドカップ出場枠を32から48に増やす案がFIFA会長から提案される【サッカー】">ワールドカップ出場枠を32から48に増やす案がFIFA会..</h3>
+			<div class="content">
+				<img class="icon_20 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/480464045435150336/F8Lo4V1h_normal.jpeg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				<span class="view_str"><span>15</span> view</span>
+			</div>
+		</div>
+	</a>
+</li>
+<li class="clearfix">
+	<a href="http://togetter.com/li/1033170" data-ga="inbound_thumblistitem-bottom_1033170">
+		<div class="thumb">
+			<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/Ct8xrIAVYAA36fh.jpg:thumb" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/placeholder150.png">
+            <span class="point">9pt</span>
+            			<span class="category_label">コラム</span>
+		</div>
+		<div class="title">
+			<h3 title="茂木健一郎氏 @kenichiromogi 第1907回【ビートルズのハンブルク時代のエピソード】連続ツイート">茂木健一郎氏 @kenichiromogi 第1907回..</h3>
+			<div class="content">
+				<img class="icon_20 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/1398541001/Snapz001_normal.jpg" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				<span class="view_str"><span>404</span> view</span>
+			</div>
+		</div>
+	</a>
+</li>
+			</ul>
+		</div>
+		</div>
+	</div>
+<script type="text/javascript">
+new CarouselBox("simple_list_box_618502123");
+</script>
+</div><div class="thumb_list_box">	<div class="list_title_box">
+			<h2 title="公式アカウント">公式アカウント</h2>
+		</div>
+	<div id="simple_list_box_895089144" class="carousel">
+		<div style="transform: translate3d(0px, 0px, 0px); width: 900px;">
+		<div class="simple_list_box">
+			<ul class="simple_list thumb_list clearfix">
+<li class="clearfix">
+	<a href="http://togetter.com/li/1032700" data-ga="inbound_thumblistitem-bottom_1032700">
+		<div class="thumb">
+			<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/CtpocEaUAAAAhx1.jpg:thumb" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/placeholder150.png">
+            <span class="point">1pt</span>
+            			<span class="category_label">アート</span>
+		</div>
+		<div class="title">
+			<h3 title="【ゲンロンこどもアート教室 #16】「市街劇をつくろう！ 第1回 俳優になる」講師：山本卓卓（範宙遊泳）、黒瀬陽平、梅沢和木、藤城噓 #ゲンロンこども教室">【ゲンロンこどもアート教室 #16】「市街劇をつくろう！..</h3>
+			<div class="content">
+				<img class="icon_20 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/3496877988/6e3437d1ade60bbb96e6be993c5625d4_normal.png" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				<span class="view_str"><span>245</span> view</span>
+			</div>
+		</div>
+	</a>
+</li>
+<li class="clearfix">
+	<a href="http://togetter.com/li/1030086" data-ga="inbound_thumblistitem-bottom_1030086">
+		<div class="thumb">
+			<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/CtVERPKVUAABE1r.jpg:thumb" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/placeholder150.png">
+            <span class="point">18pt</span>
+            			<span class="category_label">政治</span>
+		</div>
+		<div class="title">
+			<h3 title="青木理×久田将義×東浩紀「『噂の眞相』とは何だったのか——『現代日本の批評』番外編」【ニッポンの闇 #2】 #ゲンロン160927">青木理×久田将義×東浩紀「『噂の眞相』とは何だったのか—..</h3>
+			<div class="content">
+				<img class="icon_20 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/3496877988/6e3437d1ade60bbb96e6be993c5625d4_normal.png" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				<span class="view_str"><span>2240</span> view</span>
+			</div>
+		</div>
+	</a>
+</li>
+<li class="clearfix">
+	<a href="http://togetter.com/li/1030525" data-ga="inbound_thumblistitem-bottom_1030525">
+		<div class="thumb">
+			<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/Ctb9tIqVUAAnGVF.jpg:thumb" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/placeholder150.png">
+            <span class="point">5pt</span>
+            			<span class="category_label">人文</span>
+		</div>
+		<div class="title">
+			<h3 title="小沼純一×佐々木敦「音楽、と、ことば」【ゲンロン 佐々木敦 批評再生塾 第2期 #7】 #批評再生塾">小沼純一×佐々木敦「音楽、と、ことば」【ゲンロン 佐々木..</h3>
+			<div class="content">
+				<img class="icon_20 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/3496877988/6e3437d1ade60bbb96e6be993c5625d4_normal.png" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				<span class="view_str"><span>657</span> view</span>
+			</div>
+		</div>
+	</a>
+</li>
+			</ul>
+		</div>
+		<div class="simple_list_box">
+			<ul class="simple_list thumb_list clearfix">
+<li class="clearfix">
+	<a href="http://togetter.com/li/1032219" data-ga="inbound_thumblistitem-bottom_1032219">
+		<div class="thumb">
+			<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/CtzA9lOUAAARJvC.jpg:thumb" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/placeholder150.png">
+            <span class="point">90pt</span>
+            			<span class="category_label">PR</span>
+		</div>
+		<div class="title">
+			<h3 title="「モンストやるなよ」のCMが意味不明…しかし理由を知ると逆に背中を押されてしまう">「モンストやるなよ」のCMが意味不明…しかし理由を知ると..</h3>
+			<div class="content">
+				<img class="icon_20 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/660024395314761728/yuC9ueR8_normal.png" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				<span class="view_str"><span>28448</span> view</span>
+			</div>
+		</div>
+	</a>
+</li>
+<li class="clearfix">
+	<a href="http://togetter.com/li/1030927" data-ga="inbound_thumblistitem-bottom_1030927">
+		<div class="thumb">
+			<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/CthhbPIUMAEkA5C.jpg:thumb" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/placeholder150.png">
+            <span class="point">69pt</span>
+            			<span class="category_label">社会問題</span>
+		</div>
+		<div class="title">
+			<h3 title="生きづらさを抱えるあなたに～障害者殺傷事件が投げかけたもの～ #クロ現プラス #NHK">生きづらさを抱えるあなたに～障害者殺傷事件が投げかけたも..</h3>
+			<div class="content">
+				<img class="icon_20 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/660024395314761728/yuC9ueR8_normal.png" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				<span class="view_str"><span>10476</span> view</span>
+			</div>
+		</div>
+	</a>
+</li>
+<li class="clearfix">
+	<a href="http://togetter.com/li/1030634" data-ga="inbound_thumblistitem-bottom_1030634">
+		<div class="thumb">
+			<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/Ctat-3OW8AMZ2Vv.jpg:thumb" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/placeholder150.png">
+            <span class="point">17pt</span>
+            			<span class="category_label">映画</span>
+		</div>
+		<div class="title">
+			<h3 title="実写化もこの人なら安心！どんな役もこなしてしまう神木隆之介特集 9/30配信 #週刊トゥギャジン">実写化もこの人なら安心！どんな役もこなしてしまう神木隆之..</h3>
+			<div class="content">
+				<img class="icon_20 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/660024395314761728/yuC9ueR8_normal.png" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				<span class="view_str"><span>6387</span> view</span>
+			</div>
+		</div>
+	</a>
+</li>
+			</ul>
+		</div>
+		<div class="simple_list_box">
+			<ul class="simple_list thumb_list clearfix">
+<li class="clearfix">
+	<a href="http://togetter.com/li/1029682" data-ga="inbound_thumblistitem-bottom_1029682">
+		<div class="thumb">
+			<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/CtDwlgvUAAA5fAU.jpg:thumb" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/placeholder150.png">
+            <span class="point">5pt</span>
+            			<span class="category_label">海外旅行</span>
+		</div>
+		<div class="title">
+			<h3 title="東浩紀×上田洋子「チェルノブイリを歩く——ゲンロン H.I.S. チェルノブイリツアー 事前セミナー」 #チェルノブイリ2016">東浩紀×上田洋子「チェルノブイリを歩く——ゲンロン H...</h3>
+			<div class="content">
+				<img class="icon_20 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/3496877988/6e3437d1ade60bbb96e6be993c5625d4_normal.png" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				<span class="view_str"><span>989</span> view</span>
+			</div>
+		</div>
+	</a>
+</li>
+<li class="clearfix">
+	<a href="http://togetter.com/li/1033085" data-ga="inbound_thumblistitem-bottom_1033085">
+		<div class="thumb">
+			<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/Ct7PjWUVUAE4F2Q.jpg:thumb" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/placeholder150.png">
+            <span class="point">2pt</span>
+            			<span class="category_label">テレビ</span>
+		</div>
+		<div class="title">
+			<h3 title="“へそ曲り”でつかんだノーベル賞#クロ現プラス#NHK">“へそ曲り”でつかんだノーベル賞#クロ現プラス#NHK</h3>
+			<div class="content">
+				<img class="icon_20 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/660024395314761728/yuC9ueR8_normal.png" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				<span class="view_str"><span>629</span> view</span>
+			</div>
+		</div>
+	</a>
+</li>
+<li class="clearfix">
+	<a href="http://togetter.com/li/1030508" data-ga="inbound_thumblistitem-bottom_1030508">
+		<div class="thumb">
+			<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="https://pbs.twimg.com/media/CtcbOOLVYAIPCh0.jpg:thumb" data-error-image="//s.togetter.com/static/1.13.59/web/img/noimage200.png" src="./注目のまとめ - Togetterまとめ_files/placeholder150.png">
+            <span class="point">127pt</span>
+            			<span class="category_label">大学</span>
+		</div>
+		<div class="title">
+			<h3 title="“軍事”と大学　～岐路に立つ日本の科学者たち～ #クロ現プラス #NHK">“軍事”と大学　～岐路に立つ日本の科学者たち～ #クロ現..</h3>
+			<div class="content">
+				<img class="icon_20 lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://pbs.twimg.com/profile_images/660024395314761728/yuC9ueR8_normal.png" data-error-image="//s.togetter.com/static/1.13.59/web/img/noicon.png" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+				<span class="view_str"><span>9039</span> view</span>
+			</div>
+		</div>
+	</a>
+</li>
+			</ul>
+		</div>
+		</div>
+	</div>
+<script type="text/javascript">
+new CarouselBox("simple_list_box_895089144");
+</script>
+</div><div class="ad_rectangle">
+<script async="" src="./注目のまとめ - Togetterまとめ_files/adsbygoogle.js.ダウンロード"></script>
+<!-- tg_ipn_footer -->
+<ins class="adsbygoogle" style="display: inline-block; width: 300px; height: 250px;" data-ad-client="ca-pub-1379083136098030" data-ad-slot="3153012700" data-adsbygoogle-status="done"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><ins id="aswift_2_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><iframe width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;" src="./注目のまとめ - Togetterまとめ_files/saved_resource(2).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="side_list_box togech_box">
+	<div class="inner">
+		<div class="header">
+			<h3>ツイッターの話題をいち早くお届け！</h3>
+			<a class="white" href="http://togech.jp/" data-ga="inbound_togech_more">トゥギャッチ</a>
+		</div>
+		<div class="main">
+			<div>
+				<a class="togech_link" href="http://togech.jp/2016/10/04/40677">
+					<div>
+						<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://cache.togech.jp/wp-content/uploads/2016/10/57f38685ec79d-160x120.jpg" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+					</div>
+					<div>
+						患者が手を握ってきたらどうする？　医学部のテキストにあった“恋愛クイズ”に驚きの声						<span class="cssline icon_new">New</span>					</div>
+				</a>
+				<a class="togech_link" href="http://togech.jp/2016/10/05/40755">
+					<div>
+						<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://cache.togech.jp/wp-content/uploads/2016/10/57f4d4dddf2b4-160x120.jpg" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+					</div>
+					<div>
+						大根おろしでさっぱり！　簡単にできる“激ウマ和風オムライス”						<span class="cssline icon_new">New</span>					</div>
+				</a>
+</div><div>				<a class="togech_link" href="http://togech.jp/2016/10/05/40702">
+					<div>
+						<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://cache.togech.jp/wp-content/uploads/2016/10/57f46cc6cf923-160x120.jpg" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+					</div>
+					<div>
+						【悲報】世界の人気者・スヌーピーが見るも無残な姿で発見される						<span class="cssline icon_new">New</span>					</div>
+				</a>
+				<a class="togech_link" href="http://togech.jp/2016/10/05/40761">
+					<div>
+						<img class="lazy lazy-hidden data-lazy-ready" data-lazy-type="image" data-lazy-src="http://cache.togech.jp/wp-content/uploads/2016/10/57f4df979f752-160x120.jpg" src="./注目のまとめ - Togetterまとめ_files/placeholder.gif">
+					</div>
+					<div>
+						こんな裏ワザがあったとは！　メガネキャラをうまく描くテクニックを披露						<span class="cssline icon_new">New</span>					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="list_btn_box btn_centered">
+		<a class="btn comment_btn" rel="nofollow" href="http://togetter.com/switchto?type=1&amp;callback=%2Fhot">PC版に切り替える</a>
+	</div>
+		</div>
+	</div>
+<footer id="fixed_social_footer" class="fixed_social_footer" style="display: block; bottom: -10px; opacity: 1;">
+	<div class="right">
+		<a class="radius_btn gototop_btn" onclick="tgtr.toTop(this);return false;" title="TOPへ"><i class="fa fa-chevron-up"></i></a>
+	</div>
+</footer>
+<script type="text/javascript">
+new FixedFooter();
+</script>
+<header id="fixed_social_header" class="fixed_social_header fixed_social_header2 normal_fixed_header" style="display: block; top: -35px;">
+	<div></div>
+	<a class="cssblk header_mini" data-ga="inbound_fixedheader_top" href="http://togetter.com/">ツイッターをまとめよう - Togetterまとめ</a>
+	<div class="header_action">
+		<a class="btn account" href="http://togetter.com/accounts/hot" title="人気のチャンネル" data-ga="inbound_account_fixedheader"><i class="fa fa-users"></i>まとめ</a>
+		<a class="btn primary create" onclick="tgtr.toCreate();" data-ga="inbound_fixedheader_create">まとめる</a>
+	</div>
+</header>
+<script type="text/javascript">
+new FixedSocialHeader();
+</script>
+	<footer id="footer">
+		<ul>
+			<li><a href="http://togetter.com/info/terms">利用規約</a></li>
+			<li><a href="http://togetter.com/info/contact">お問い合わせ</a></li>
+			<li><a href="http://togetter.co.jp/">運営会社</a></li>
+		</ul>
+		<div id="footerNotes">
+			Copyright 2016 Togetter Inc. All Rights Reserved.
+		</div>
+	</footer>
+</div><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./注目のまとめ - Togetterまとめ_files/P5DLcu0KGJB.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./注目のまとめ - Togetterまとめ_files/P5DLcu0KGJB(1).html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+<div id="ad_footer_overlay" class="ad_footer_overlay">
+<script type="text/javascript">
+var adstir_vars = {
+  ver    : "4.0",
+  app_id : "MEDIA-dc198a04",
+  ad_spot: 16,
+  floating : true,
+  center : false
+};
+</script>
+<script type="text/javascript" src="./注目のまとめ - Togetterまとめ_files/adstir.js.ダウンロード"></script><script src="./注目のまとめ - Togetterまとめ_files/ad"></script><div style="text-align:left;"><div style="position: fixed; top: auto; z-index: 2999999; width: 100%; bottom: 0px; font-size: 0px; box-sizing: content-box; left: -10000px; right: -10000px;"><div style="line-height: 100%; text-align: center; padding-left: 10134px; padding-right: 10134px; box-sizing: content-box; transform-origin: 50% 100% 0px; left: 0px; width: 410.625px; transform: scale(1);" id="adstir_float"><div style="line-height:1.3;width:100%;background-color:#000;">
+<script type="text/javascript" language="JavaScript">
+<!--
+yads_ad_ds = '53378_84687';
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" src="./注目のまとめ - Togetterまとめ_files/yads.js.ダウンロード"></script><script type="text/javascript" language="JavaScript" src="./注目のまとめ - Togetterまとめ_files/yads_vimps-1.5.0.js.ダウンロード"></script><span></span><script src="./注目のまとめ - Togetterまとめ_files/tag"></script><div id="yads_dummy_parent_838279198"><!-- ad --><div data-ydntxt-wrap="" style="-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;-webkit-text-size-adjust: 100%;display:block;position: relative;height:auto;width: auto;margin:0px 0px 0px 0px ;padding:0;clear:both;float:none;text-align:left;font-size:16px;overflow:hidden;background-image:none;border-style:none;border-width:0px 0px 0px 0px ;border-color:#fff;background:#fff;font-family:inherit;line-height:inherit" data-i="1" data-i-position="TR" data-i-url="//feedback.promotionalads.yahoo.co.jp/fdbk?p=gc58s1EeImGW9PnVJnIODaUOG_Mnu13bPAlHOXsdyGJ.ycEGkzh2VV85wSBqkYxqFLnnubi4qv7HfkxHGJ6SthQnGg--&amp;a1=CMFVyS0aIzjeX7SJHPiHiOmw0gtAYaE7pJ96Y1jlEgoxiGdt2zLsp6RUqVbBut6DMrsNMHdjZRE-&amp;c=Q8gjZN0ePjs1bnBF5qWNHHno61ig" data-i-linktarget="_top"><!-- item --><a data-ydntxt-item="1" target="_top" style="-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;display:block;overflow:hidden;height:70px;width:auto;margin: 0;padding:0px 8px 0px 8px ;line-height:inherit;font-size: inherit;float:none;border-style:solid;border-width:0px 0px 0px 0px ;border-color:#ccc;text-decoration:none;background:#000000;word-break:break-all;_zoom:1;" onmouseout="this.style.backgroundColor=&#39;#000000&#39;;this.getElementsByTagName(&#39;dt&#39;)[0].style.color=&#39;#FFFFFF&#39;;this.getElementsByTagName(&#39;dt&#39;)[0].style.textDecoration=&#39;none&#39;;this.getElementsByTagName(&#39;dd&#39;)[0].style.color=&#39;#6E6E6E&#39;;this.getElementsByTagName(&#39;dd&#39;)[0].style.textDecoration=&#39;none&#39;;this.getElementsByTagName(&#39;dd&#39;)[1].style.color=&#39;#6E6E6E&#39;;this.getElementsByTagName(&#39;dd&#39;)[1].style.textDecoration=&#39;none&#39;;" onmouseover="this.style.backgroundColor=&#39;#000000&#39;;this.getElementsByTagName(&#39;dt&#39;)[0].style.color=&#39;#FFFFFF&#39;;this.getElementsByTagName(&#39;dt&#39;)[0].style.textDecoration=&#39;none&#39;;this.getElementsByTagName(&#39;dd&#39;)[0].style.color=&#39;#6E6E6E&#39;;this.getElementsByTagName(&#39;dd&#39;)[0].style.textDecoration=&#39;none&#39;;this.getElementsByTagName(&#39;dd&#39;)[1].style.color=&#39;#6E6E6E&#39;;this.getElementsByTagName(&#39;dd&#39;)[1].style.textDecoration=&#39;none&#39;;" href="http://rd.ane.yahoo.co.jp/rd?ep=OH5II5ZN4hj1PPoW3_Q_zdhgx3kUjGMRUOMTZS8BEcl.q97yal_dmPXMO00PiF6px31GIWe.5FgN3MPiGLEP8uprQnOtA9pHruCbbpc.21dn1EzPFhy2D4skk7YS3cL8M6ph6CeCmIsdpBmTqsuKv6wHzljPi5QjdkdXUdDcbJMEnr.8teEToMNCvVifgF0EF2TMXCg24XVcRFvcGTyRMJyb4eAloFZO2byI_6La4rwEMqfR_YfMWAh15q0keFXAFWd0mfGBWbo0H0DryhkDCZ_HTEt.r6iFzA--&amp;a=fcD87q4_xD4jSCFc2w--&amp;s=J3EqCNU_kDmzLA--&amp;t=HcTRQqJhwyu7&amp;ifa=VG8mDFM-&amp;cv_label=9fWBYQBN9g.U&amp;tpl_id=XoddisU4&amp;tpl_path=pevgX4Vlyyz1pQQpkhh_Vkh0PCYUmMGLBqN_hFyCVk4t9j_qiCEh2ohoqtEY.pr3Ujs1eZ0ibyC_5cua2vKicx5E.4NcJ3FVTDae6gJr5Q--&amp;ctv_optmz=4bAM5jY9&amp;disp_atime=5l.3Uz49kmh_3EaKGUB4&amp;vflg=qnfPzi08&amp;C=9&amp;D=4&amp;F=0&amp;I=&amp;RI=d846723d3b6099a63f25c95609221d9d&amp;S=124a3f5f7404&amp;as=1&amp;etlid=0&amp;f=1&amp;ff=1&amp;fq_d=1%2C1%2C1%2C0&amp;fq_m=1%2C1%2C1%2C0&amp;fq_w=1%2C1%2C1%2C0&amp;g=4&amp;lp=http%3A%2F%2Fwww.sumi-kae.net%2F%3Futm_source%3DYDN%26utm_medium%3Dcpc%26utm_campaign%3Doiwai%26utm_content%3Dtarget&amp;maf=0&amp;mid=0&amp;o=1&amp;p=9&amp;qfid=82571&amp;r=0&amp;rfm=2_1_2&amp;sfid=82571&amp;skwid=0&amp;tlid=0&amp;u=togetter.com&amp;yads_ds=53378_84687&amp;v=2"><img src="./注目のまとめ - Togetterまとめ_files/2d34c7ba0558526c66f9be90fcd4fb49.jpg" alt="" style="-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;float:left;width: 55px;height: 55px;margin:8px 8px 0px 0px ;border-style:none;border-width:0px 0px 0px 0px ;border-color:#fff;"><div style="width:auto;height:auto;margin:0;padding:0;line-height:inherit;font-size:inherit;background:none;float:none;margin-left: 63px;"><dl style="width:auto;height:auto;margin:0;padding:0;font-size:inherit;line-height: inherit;text-decoration:none;word-break:break-all;background:none;float:none;"><dt data-ydntxt-title="1" style="width:auto;height:auto;margin:4px 0px 0px 0px ;padding:0;font-size:12px;line-height:inherit;background:none;float:none;text-decoration:none;color:#FFFFFF;font-weight:bold;">愛知の住宅探し／住みかえnet</dt><dd data-ydntxt-host="1" style="width:auto;height:auto;margin:0px 0px 0px 0px ;padding:0;font-size:10px;color:#6E6E6E;line-height:inherit;background:none;float:none;font-weight:normal;;text-decoration:none;">www.sumi-kae.net</dd><dd data-ydntxt-desc="1" style="width:auto;height:auto;margin:0px 0px 0px 0px ;padding:0;font-size:10px;color:#6E6E6E;line-height:inherit;background:none;float:none;text-decoration:none;font-weight:normal;">約1600棟県下トップクラスの物件数。愛知県専門／お祝い金10万円プレゼント</dd></dl></div></a><div class="i-ico" style="position: absolute; text-align: left; left: 100%; top: -0.33px;"><a href="http://feedback.promotionalads.yahoo.co.jp/fdbk?p=gc58s1EeImGW9PnVJnIODaUOG_Mnu13bPAlHOXsdyGJ.ycEGkzh2VV85wSBqkYxqFLnnubi4qv7HfkxHGJ6SthQnGg--&amp;a1=CMFVyS0aIzjeX7SJHPiHiOmw0gtAYaE7pJ96Y1jlEgoxiGdt2zLsp6RUqVbBut6DMrsNMHdjZRE-&amp;c=Q8gjZN0ePjs1bnBF5qWNHHno61ig" target="_top" style="height: 15px; font-size: 11px; cursor: pointer; text-decoration: none;"><span style="position: absolute; height: 15px; width: 113px; margin-left: -17px; left: 0px; border-bottom-left-radius: 4px; background-color: rgb(255, 255, 255); opacity: 0.8; transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);"></span><span style="overflow: hidden; position: absolute; display: block; height: 15px; width: 90px; visibility: hidden; left: -109px;"><span style="font-family: sans-serif; color: rgb(0, 0, 0); text-decoration: none; line-height: 17px; vertical-align: middle; white-space: nowrap; display: block; position: absolute; left: 92px; transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1); width: 90px;">Yahoo! JAPAN広告</span></span><i style="margin: 1px 1px 1px -15px; position: absolute;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="13"><image width="13" height="13" href="data:image/svg+xml;charset=utf-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2016.0.4%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.0%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FTR%2F2001%2FREC-SVG-20010904%2FDTD%2Fsvg10.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.0%22%20id%3D%22layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%0D%0A%09%20y%3D%220px%22%20width%3D%2213px%22%20height%3D%2213px%22%20viewBox%3D%220%200%2013%2013%22%20enable-background%3D%22new%200%200%2013%2013%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Cpath%20fill%3D%22%23696969%22%20d%3D%22M6.5%2C13c0.685%2C0%2C1.328-0.267%2C1.811-0.75l3.94-3.938c0.999-0.999%2C0.999-2.624%2C0-3.622L8.311%2C0.75%0D%0A%09%09C7.828%2C0.267%2C7.185%2C0%2C6.5%2C0S5.172%2C0.267%2C4.688%2C0.75L0.749%2C4.689c-0.999%2C0.998-0.999%2C2.623%2C0%2C3.622l3.939%2C3.938%0D%0A%09%09C5.172%2C12.733%2C5.815%2C13%2C6.5%2C13z%20M6.498%2C6.135c-0.42%2C0-0.792%2C0.34-0.792%2C0.758v3.904c0%2C0.096-0.039%2C0.186-0.103%2C0.248%0D%0A%09%09c-0.064%2C0.064-0.153%2C0.104-0.25%2C0.104c-0.098%2C0-0.187-0.039-0.251-0.104L1.54%2C7.521c-0.562-0.563-0.562-1.478%2C0-2.04l3.94-3.939%0D%0A%09%09C5.752%2C1.27%2C6.115%2C1.119%2C6.5%2C1.119s0.747%2C0.15%2C1.02%2C0.422l3.94%2C3.939c0.562%2C0.562%2C0.562%2C1.477%2C0%2C2.04l-3.562%2C3.524%0D%0A%09%09c-0.064%2C0.064-0.153%2C0.104-0.251%2C0.104c-0.097%2C0-0.186-0.039-0.25-0.104c-0.063-0.062-0.104-0.152-0.104-0.248V6.893%0D%0A%09%09c0-0.418-0.371-0.758-0.79-0.758H6.498z%22%2F%3E%0D%0A%09%3Ccircle%20fill%3D%22%23696969%22%20cx%3D%226.5%22%20cy%3D%223.922%22%20r%3D%221.146%22%2F%3E%0D%0A%3C%2Fg%3E%0D%0A%3C%2Fsvg%3E"></image></svg></i></a></div></div></div><script id="yads_preloaded_js_50810251" type="text/javascript" src="./注目のまとめ - Togetterまとめ_files/editorial-ultra_variable_free_image.min.js.ダウンロード"></script></div><img src="./注目のまとめ - Togetterまとめ_files/adstir" width="1" height="1" style="display:none;position:absolute;border:none;padding:0;margin:0;"><img src="./注目のまとめ - Togetterまとめ_files/sync" width="1" height="1" style="display:none;position:absolute;border:none;padding:0;margin:0;"></div></div></div><script src="./注目のまとめ - Togetterまとめ_files/adstir_float_1002.js.ダウンロード"></script>
+</div>
+<div id="fb-root" style="overflow:hidden;visibility:hidden;"></div>
+<script type="text/javascript" charset="UTF-8">
+$LAB
+.script("//b.st-hatena.com/js/bookmark_button.js")
+.script("//twemoji.maxcdn.com/twemoji.min.js")
+.script("//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=121386947952778&version=v2.7");
+
+$LAB.ready(function(){
+	emojiParser();
+
+	FB.Event.subscribe('edge.create', function(url,element){
+		ga('send', 'event', 'social', 'bottom', 'fb_create');
+	});
+	FB.Event.subscribe('edge.remove', function(url,element){
+		ga('send', 'event', 'social', 'bottom', 'fb_remove');
+	});
+
+	twttr.ready(function (twttr) {
+	    twttr.events.bind('click', function(event){
+		    console.log(event);
+	    	ga('send', 'event', 'social', 'bottom', 'tw_click');
+		});
+		twttr.events.bind('tweet', function(event){
+	    	ga('send', 'event', 'social', 'bottom', 'tw_tweet');
+		});
+		twttr.events.bind('follow', function(event){
+	    	ga('send', 'event', 'social', 'bottom', 'tw_follow');
+		});
+	});
+
+});
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"0787508c5c","applicationID":"4430985","transactionName":"b1AGZUFZXhJRVxBRX1YaMUNaF1kPVFEcFkBQRQ==","queueTime":0,"applicationTime":130,"atts":"QxcFEwlDTRw=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<span id="mobilelayouter_orientationchange" style="display:none" onclick=" window.orientation=0;if(typeof(x_orientation_change_jqueryparts) !== &#39;undefined&#39;) {x_orientation_change_jqueryparts();}var evt = document.createEvent(&#39;HTMLEvents&#39;);evt.initEvent(&#39;orientationchange&#39;, true, true);window.dispatchEvent(evt);"></span>
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="pswp__bg"></div>
+      <div class="pswp__scroll-wrap">
+          <div class="pswp__container">
+              <div class="pswp__item"></div>
+              <div class="pswp__item"></div>
+              <div class="pswp__item"></div>
+          </div>
+          <div class="pswp__ui pswp__ui--hidden">
+              <div class="pswp__top-bar">
+                  <div class="pswp__counter"></div>
+                  <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                  <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                  <div class="pswp__preloader">
+                      <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                          <div class="pswp__preloader__donut"></div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                  <div class="pswp__share-tooltip"></div>
+              </div>
+              <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+              </button>
+              <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+              </button>
+              <div class="pswp__caption">
+                  <div class="pswp__caption__center"></div>
+              </div>
+          </div>
+      </div>
+  </div><div id="AutoPatchWork-Bar" class="on"></div><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" src="./注目のまとめ - Togetterまとめ_files/saved_resource(3).html"></iframe><span style="border-radius: 2px; text-indent: 20px; width: auto; padding: 0px 4px 0px 0px; text-align: center; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 11px; line-height: 20px; font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif; color: rgb(255, 255, 255); background: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjYmQwODFjIj48L3BhdGg+PC9nPjwvc3ZnPg==&quot;) 3px 50% / 14px 14px no-repeat rgb(189, 8, 28); position: absolute; opacity: 1; z-index: 8675309; display: none; cursor: pointer; border: none; -webkit-font-smoothing: antialiased;">保存</span></body></html>

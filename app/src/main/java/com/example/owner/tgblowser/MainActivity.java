@@ -33,25 +33,24 @@ import java.util.ArrayList;
 
 public class MainActivity extends Activity {
 
-    public Elements li;
-    public ArrayList<String> list = new ArrayList<String>();
-    private ArrayAdapter<String> adapter;
+    public ArrayList<ListItem> list;
     private ListView listView;
+    private ListArrayAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+//        list = new ArrayList<ListItem>();
+//        listView = (ListView)findViewById(R.id.listView);
 
-        list.add("aiueo");
-        list.add("kakikukeko");
+        new NewThread(this).execute("a");
+//        adapter =
+//                new ListArrayAdapter(this, R.layout.item,list);
 
-        adapter =
-                new ArrayAdapter<String>(this, R.layout.item,R.id.title,list);
-
-        listView = (ListView)findViewById(R.id.listView);
-        listView.setAdapter(adapter);
+//        mAdapter = new ListArrayAdapter(this,R.layout.item,list);
+//        listView.setAdapter(mAdapter);
     }
 
     @Override
