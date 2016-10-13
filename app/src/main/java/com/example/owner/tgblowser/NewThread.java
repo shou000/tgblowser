@@ -13,10 +13,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 
 /**
@@ -41,6 +38,11 @@ public class NewThread extends AsyncTask<String,Void,ArrayList<ListItem>> {
                     .userAgent("Mozilla/5.0 (iPhone; CPU iPhone OS 8_0_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12A366 Safari/600.1.4")
                     .get();
             parse(doc);
+            doc = Jsoup.connect("http://togetter.com/hot?page=2")
+                    .userAgent("Mozilla/5.0 (iPhone; CPU iPhone OS 8_0_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12A366 Safari/600.1.4")
+                    .get();
+            parse(doc);
+
         }catch (IOException e){
             e.printStackTrace();
         }
@@ -71,12 +73,25 @@ public class NewThread extends AsyncTask<String,Void,ArrayList<ListItem>> {
 //        item.setTitle("c");
 //        mlist.add(item);
 
-        Elements lists;
+        Elements lists_nothumb,lists;
         lists = doc.select("ul.simple_list li.has_thumb.clearfix");
         for(Element list : lists){
             ListItem item = new ListItem();
             item.setTitle(list.getElementsByTag("h3").attr("title").toString());
             item.setThumb(list.getElementsByTag("img").attr("src").toString());
+//            item.setThumb(R.mipmap.ic_launcher);
+            item.setLink(list.getElementsByTag("a").attr("href").toString());
+//            item.setTitle("a");
+//            item.setThumb("b");
+//            item.setLink(list.outerHtml());
+            mlist.add(item);
+        }
+        lists_nothumb = doc.select("ul.simple_list li.clearfix");
+        for(Element list : lists_nothumb){
+            ListItem item = new ListItem();
+            item.setTitle(list.getElementsByTag("h3").attr("title").toString());
+            item.setThumb(null);
+//            item.setThumb(R.mipmap.ic_launcher);
             item.setLink(list.getElementsByTag("a").attr("href").toString());
 //            item.setTitle("a");
 //            item.setThumb("b");

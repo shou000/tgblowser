@@ -33,9 +33,9 @@ import java.util.ArrayList;
 
 public class MainActivity extends Activity {
 
-    public ArrayList<ListItem> list;
-    private ListView listView;
-    private ListArrayAdapter mAdapter;
+//    public ArrayList<ListItem> list;
+//    private ListView listView;
+//    private ListArrayAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

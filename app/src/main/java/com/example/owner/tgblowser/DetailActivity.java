@@ -1,5 +1,6 @@
 package com.example.owner.tgblowser;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -20,6 +21,11 @@ public class DetailActivity extends AppCompatActivity {
     private WebView myWebView;
     private String pageTitle;
     private TextView textView;
+    private Activity activity;
+
+    public DetailActivity(Activity activity) {
+        this.activity = activity;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +49,9 @@ public class DetailActivity extends AppCompatActivity {
                     url = url.replaceFirst("%3A",":");
                     Log.d("TAG","intent " + url);
                     myWebView.loadUrl(url);
+                }else if(url.endsWith("photo/1")){
+                    Intent intent = new Intent(url);
+                    activity.startActivity(intent);
                 }
                 return false;
             }

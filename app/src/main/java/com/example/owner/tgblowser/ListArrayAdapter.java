@@ -1,13 +1,22 @@
 package com.example.owner.tgblowser;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.AsyncTask;
 import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.List;
 
 /**
@@ -41,9 +50,56 @@ public class ListArrayAdapter extends ArrayAdapter<ListItem> {
         title.setText(item.getTitle());
         TextView link = (TextView)view.findViewById(R.id.link);
         link.setText(item.getLink());
-        TextView thumb = (TextView)view.findViewById(R.id.thumb);
-        thumb.setText(item.getThumb());
+
+        ImageView thumb = (ImageView)view.findViewById(R.id.thumb);
+        thumb.setImageResource(R.mipmap.ic_launcher);
+        if (item.getThumb()!=null){
+            ImageTask task = new ImageTask(thumb);
+            task.execute(item.getThumb());
+        }
+        //thumb.setImageResource(item.getThumb());
 
         return view;
+    }
+
+    class ImageTask extends AsyncTask<String,Void, Bitmap>{
+        private ImageView mimage;
+        public ImageTask(ImageView image){
+            mimage = image;
+        }
+
+        @Override
+        protected Bitmap doInBackground(String... params) {
+            HttpURLConnection connection = null;
+            InputStream inputStream = null;
+            Bitmap bitmap = null;
+            try {
+                URL url = new URL(params[0]);
+                connection = (HttpURLConnection)url.openConnection();
+                connection.setRequestMethod("GET");
+                connection.connect();
+                inputStream = connection.getInputStream();
+
+                bitmap = BitmapFactory.decodeStream(inputStream);
+            }catch (MalformedURLException exception){
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }finally {
+                if (inputStream != null){
+                    try {
+                        inputStream.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+            return bitmap;
+        }
+
+        @Override
+        protected void onPostExecute(Bitmap bitmap) {
+            mimage.setImageBitmap(bitmap);
+        }
     }
 }
