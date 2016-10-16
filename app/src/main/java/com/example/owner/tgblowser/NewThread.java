@@ -31,7 +31,7 @@ public class NewThread extends AsyncTask<String,Void,ArrayList<ListItem>> {
 
     @Override
     protected ArrayList<ListItem> doInBackground(String... params) {
-        Document doc = null;
+        Document doc;
         try {
 //            doc = Jsoup.parse(,"UTF-8");
             doc = Jsoup.connect("http://togetter.com/hot")
@@ -74,30 +74,35 @@ public class NewThread extends AsyncTask<String,Void,ArrayList<ListItem>> {
 //        mlist.add(item);
 
         Elements lists_nothumb,lists;
-        lists = doc.select("ul.simple_list li.has_thumb.clearfix");
+        lists = doc.select("div.contents_main > ul.simple_list li.clearfix");
         for(Element list : lists){
             ListItem item = new ListItem();
-            item.setTitle(list.getElementsByTag("h3").attr("title").toString());
-            item.setThumb(list.getElementsByTag("img").attr("src").toString());
+            item.setTitle(list.getElementsByTag("h3").attr("title"));
+            if(list.getElementsByClass("thumb").select("img").attr("src").isEmpty()){
+                item.setThumb(null);
+            }else{
+                item.setThumb(list.getElementsByClass("thumb").select("img").attr("src"));
+            }
+//            item.setThumb(list.getElementsByClass("thumb").select("img").attr("src"));
 //            item.setThumb(R.mipmap.ic_launcher);
-            item.setLink(list.getElementsByTag("a").attr("href").toString());
+            item.setLink(list.getElementsByTag("a").attr("href"));
 //            item.setTitle("a");
 //            item.setThumb("b");
 //            item.setLink(list.outerHtml());
             mlist.add(item);
         }
-        lists_nothumb = doc.select("ul.simple_list li.clearfix");
-        for(Element list : lists_nothumb){
-            ListItem item = new ListItem();
-            item.setTitle(list.getElementsByTag("h3").attr("title").toString());
-            item.setThumb(null);
-//            item.setThumb(R.mipmap.ic_launcher);
-            item.setLink(list.getElementsByTag("a").attr("href").toString());
-//            item.setTitle("a");
-//            item.setThumb("b");
-//            item.setLink(list.outerHtml());
-            mlist.add(item);
-        }
+//        lists_nothumb = doc.select("ul.simple_list li.clearfix");
+//        for(Element list : lists_nothumb){
+//            ListItem item = new ListItem();
+//            item.setTitle(list.getElementsByTag("h3").attr("title"));
+//            item.setThumb(null);
+////            item.setThumb(R.mipmap.ic_launcher);
+//            item.setLink(list.getElementsByTag("a").attr("href"));
+////            item.setTitle("a");
+////            item.setThumb("b");
+////            item.setLink(list.outerHtml());
+//            mlist.add(item);
+//        }
 //        return list;
     }
 }

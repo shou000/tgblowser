@@ -1,6 +1,5 @@
 package com.example.owner.tgblowser;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -8,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
@@ -21,11 +22,6 @@ public class DetailActivity extends AppCompatActivity {
     private WebView myWebView;
     private String pageTitle;
     private TextView textView;
-    private Activity activity;
-
-    public DetailActivity(Activity activity) {
-        this.activity = activity;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,9 +45,6 @@ public class DetailActivity extends AppCompatActivity {
                     url = url.replaceFirst("%3A",":");
                     Log.d("TAG","intent " + url);
                     myWebView.loadUrl(url);
-                }else if(url.endsWith("photo/1")){
-                    Intent intent = new Intent(url);
-                    activity.startActivity(intent);
                 }
                 return false;
             }
@@ -105,10 +98,47 @@ public class DetailActivity extends AppCompatActivity {
             Log.d("TAG","changeurl "+ url);
             myWebView.loadUrl(url);
         }else{
-            myWebView.loadUrl("http://togetter.com/hot");
+            myWebView.loadUrl(url);
+//            myWebView.loadUrl("http://togetter.com/hot");
         }
 
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.detail_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.comment:
+                String new_url,previous_url;
+                previous_url=myWebView.getUrl();
+                new_url = "http://i.togetter.com/comment"+
+                        previous_url.substring(previous_url.lastIndexOf("/"));
+                myWebView.loadUrl(new_url);
+//                Intent intent = new android.content.Intent(this, preference.class);
+//                startActivity(intent);
+                break;
+            case R.id.reload:
+                myWebView.reload();
+                break;
+            case R.id.favorite:
+                FavoriteItem record = new FavoriteItem();
+                record.setItem_title(myWebView.getTitle());
+                record.setItem_url(myWebView.getUrl());
+                DataAccess dac=new DataAccess(DetailActivity.this);
+                dac.save_item(record);
+                break;
+            case R.id.favoriteview:
+                Intent intent = new Intent(this,FavoriteActivity.class);
+                startActivity(intent);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override

@@ -74,6 +74,10 @@ public class MainActivity extends Activity {
                 Boolean bool = pref.getBoolean("checkbox_1_key",true);
                 Toast.makeText(this, bool.toString(), Toast.LENGTH_SHORT).show();
                 break;
+            case R.id.favoriteview:
+                Intent intent2 = new Intent(this,FavoriteActivity.class);
+                startActivity(intent2);
+                break;
         }
         return super.onMenuItemSelected(featureId, item);
     }

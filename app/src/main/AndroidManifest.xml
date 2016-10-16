@@ -16,7 +16,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".preference"
@@ -34,6 +33,7 @@
                     android:scheme="http" />
             </intent-filter>
         </activity>
+        <activity android:name=".FavoriteActivity"></activity>
     </application>
 
 </manifest>

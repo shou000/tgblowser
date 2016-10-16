@@ -81,6 +81,7 @@ public class ListArrayAdapter extends ArrayAdapter<ListItem> {
                 inputStream = connection.getInputStream();
 
                 bitmap = BitmapFactory.decodeStream(inputStream);
+//               bitmap = Bitmap.createBitmap(bitmap,0,0,96,96);
             }catch (MalformedURLException exception){
 
             } catch (IOException e) {
