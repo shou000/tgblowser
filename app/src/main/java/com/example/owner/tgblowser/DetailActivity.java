@@ -17,6 +17,13 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
+import java.io.IOException;
+
 public class DetailActivity extends AppCompatActivity {
 
     private WebView myWebView;
@@ -89,13 +96,15 @@ public class DetailActivity extends AppCompatActivity {
 
             Toast.makeText(this, url, Toast.LENGTH_LONG).show();
             if(url.startsWith("http://togetter.com/li") ){
-                url = "http://i." + url.substring(7,url.length());
+//                url = "http://i." + url.substring(7,url.length());
                 Log.d("TAG","changeurl "+ url);
+//                connect_page(url);
                 myWebView.loadUrl(url);
             }
         }else if(url.startsWith("http://togetter.com/li") ){
-            url = "http://i." + url.substring(7,url.length());
+//            url = "http://i." + url.substring(7,url.length());
             Log.d("TAG","changeurl "+ url);
+//                connect_page(url);
             myWebView.loadUrl(url);
         }else{
             myWebView.loadUrl(url);
@@ -117,9 +126,14 @@ public class DetailActivity extends AppCompatActivity {
             case R.id.comment:
                 String new_url,previous_url;
                 previous_url=myWebView.getUrl();
-                new_url = "http://i.togetter.com/comment"+
-                        previous_url.substring(previous_url.lastIndexOf("/"));
-                myWebView.loadUrl(new_url);
+                if (previous_url.indexOf("?page=") == -1) {
+//                    new_url = "http://i.togetter.com/comment" +
+//                            previous_url.substring(previous_url.lastIndexOf("/"));
+                }else{
+//                    new_url = "http://i.togetter.com/comment" +
+//                            previous_url.substring(previous_url.lastIndexOf("/"),previous_url.lastIndexOf("?"));
+                }
+//                myWebView.loadUrl(new_url);
 //                Intent intent = new android.content.Intent(this, preference.class);
 //                startActivity(intent);
                 break;
@@ -129,7 +143,12 @@ public class DetailActivity extends AppCompatActivity {
             case R.id.favorite:
                 FavoriteItem record = new FavoriteItem();
                 record.setItem_title(myWebView.getTitle());
-                record.setItem_url(myWebView.getUrl());
+                String favorite_url= myWebView.getUrl();
+                if (favorite_url.indexOf("?page=") == -1) {
+                    record.setItem_url(favorite_url);
+                }else{
+                    record.setItem_url(favorite_url.substring(0,favorite_url.lastIndexOf("?")));
+                }
                 DataAccess dac=new DataAccess(DetailActivity.this);
                 dac.save_item(record);
                 break;
@@ -148,5 +167,19 @@ public class DetailActivity extends AppCompatActivity {
             return true;
         }
         return super.onKeyDown(keyCode,  event);
+    }
+
+    public boolean connect_page(String url){
+        Document doc = null;
+        try {
+            doc = Jsoup.connect(url)
+                    .userAgent("Mozilla/5.0 (iPhone; CPU iPhone OS 8_0_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12A366 Safari/600.1.4")
+                    .get();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Elements pagenation =doc.select("div#document > div.pagenation > a[rel=next]");
+
+        return true;
     }
 }

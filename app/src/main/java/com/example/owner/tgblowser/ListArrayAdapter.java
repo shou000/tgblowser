@@ -52,7 +52,10 @@ public class ListArrayAdapter extends ArrayAdapter<ListItem> {
         link.setText(item.getLink());
 
         ImageView thumb = (ImageView)view.findViewById(R.id.thumb);
-        thumb.setImageResource(R.mipmap.ic_launcher);
+        Bitmap bmp = BitmapFactory.decodeResource(getContext().getResources(), R.drawable.ic_launcher_xdpi);
+        bmp = Bitmap.createBitmap(bmp,0,0,128,128);
+        thumb.setImageBitmap(bmp);
+//        thumb.setImageResource(R.mipmap.ic_launcher);
         if (item.getThumb()!=null){
             ImageTask task = new ImageTask(thumb);
             task.execute(item.getThumb());
@@ -81,7 +84,7 @@ public class ListArrayAdapter extends ArrayAdapter<ListItem> {
                 inputStream = connection.getInputStream();
 
                 bitmap = BitmapFactory.decodeStream(inputStream);
-//               bitmap = Bitmap.createBitmap(bitmap,0,0,96,96);
+               bitmap = Bitmap.createBitmap(bitmap,0,0,128,128);
             }catch (MalformedURLException exception){
 
             } catch (IOException e) {
